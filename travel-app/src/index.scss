@@ -1,0 +1,13 @@
+@import './styles/vars.scss';
+@import './styles/mixins.scss';
+
+@import './components/app/app.scss';
+@import './components/header/header.scss';
+@import './components/header/components/search/search.scss';
+@import './components/header/components/lang/lang.scss';
+@import './components/footer/footer.scss';
+
+@import './pages/main/main.scss';
+@import './pages/main/components/item-card/item-card.scss';
+
+@import './pages/country/country.scss';
