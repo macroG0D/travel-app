@@ -4,7 +4,7 @@ import ATTRACTIONS from '../../data/ATTRACTIONS.json';
 const ItemCard = ({id}) => {
 	const itemCardImage = {
 		background: `url('/images/${id}/main.jpg')`,
-		backgroundSize: 'cover'
+		 backgroundSize: 'cover'
 	};
 
 	return (
