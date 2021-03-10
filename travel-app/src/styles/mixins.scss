@@ -1,3 +1,17 @@
 @mixin bold-font{
   font-weight: bold;
 }
+
+@mixin h3{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+}
+
+@mixin body-text-md{
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray-light-color;
+  margin: 0;
+}
