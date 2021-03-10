@@ -2,6 +2,13 @@ html{
   color:$secondary-color;
   background-color: $primary-color;
 }
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: $light-color;
+}
 .app{
   &__title{
     @include bold-font;

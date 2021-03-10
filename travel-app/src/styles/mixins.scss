@@ -1,3 +1,9 @@
-@mixin bold-font{
+@mixin bold-font {
   font-weight: bold;
+}
+
+@mixin body-text-sm {
+  font-size: 12px;
+  line-height: 20px;
+  color: $light-color;
 }
