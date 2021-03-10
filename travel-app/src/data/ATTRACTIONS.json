@@ -3,7 +3,10 @@
     "id": 0,
     "title": "Australia",
     "capital": "Canberra",
-    "currencyCode":"AUD",
+    "currency":{
+      "name": "Australian dollar",
+      "code": "AUD"
+    },
     "info": "Australia is a land of dreams. From the sacred legends of the aboriginal Dreamtime, when the great spirits conjured the coral reefs, rainforests, and scorched red deserts, to armchair travelers who describe Australia as their dream destination, the Land Down Under deserves all the hype. The world's smallest continent and largest island, Australia is almost the same size as the United States but with a population the size of New York State and some of the quirkiest wildlife on the planet.",
     "info-gallery": [
       {"name": "Sydney Opera House", "description": "Mention \"Sydney, Australia\" and most people think of the Opera House. Shaped like huge shells or billowing sails, this famous building on Sydney's Bennelong Point graces the list of UNESCO World Heritage Sites and is one of the world's great architectural icons. The location is stunning. Water surrounds the structure on three sides, and the Royal Botanic Gardens border it to the south."},
@@ -20,7 +23,10 @@
     "id": 1,
     "title": "France",
     "capital": "Paris",
-    "currencyCode":"EUR",
+    "currency":{
+      "name": "Euro",
+      "code": "EUR"
+    },
     "info": "Famous for its wines and cheeses, France is the world’s most popular tourist destination. Visitors are attracted by historic cities, a beautiful countryside, the castles. In addition, France offers an agreeable climate, some excellent beaches on the French Riviera, the Atlantic coast and the island of Corsica, wide possibilities for winter sports, and a rich culture with food and wines that are among the most celebrated in the world.",
     "info-gallery": [
       {"name":"Eiffel Tower", "description":"The symbol of Paris, the Eiffel Tower is a feat of ingenuity as much as it is a famous landmark. This structure of 8,000 metallic parts was designed by Gustave Eiffel as a temporary exhibit for the World Fair of 1889. Originally loathed by critics, the 320-meter-high tower is now a beloved and irreplaceable fixture of the Paris skyline."},
@@ -37,7 +43,10 @@
     "id": 2,
     "title": "Spain",
     "capital": "Madrid",
-    "currencyCode":"EUR",
+    "currency":{
+      "name": "Euro",
+      "code": "EUR"
+    },
     "info": "Spain is a surprise to those who have the image of having to fight for towel space at one of its crowded beaches or sipping sangria while watching a bull fight or flamenco. From the ancient monuments left by the Romans and Moors, the medieval castles of the interior, the white villages in inland Andalucía or the vibrant cities of Barcelona and Madrid, there is a great mixture of cultural attractions in Spain.",
     "info-gallery": [
       {"name":"Alhambra", "description":"Part fortress, part palace and part garden the Alhambra is situated on a plateau overlooking the city of Granada in southern Spain. The palace was constructed in the 14th century by the Nasrid sultans. The Alhambra is now one of Spain’s major tourist attractions and many visitors come to Granada just to see the Alhambra."},
@@ -54,7 +63,10 @@
     "id": 3,
     "title": "Brazil",
     "capital": "Brasilia",
-    "currencyCode":"BRL",
+    "currency":{
+      "name": "Brazilian real",
+      "code": "BRL"
+    },
     "info": "The largest country in South America, Brazil occupies almost half the continent. Nearly all of it is in the Southern Hemisphere, and much of it is tropical, with vast stretches of rainforest filled with exotic plants and wildlife. For tourists, Brazil is both a tropical paradise and an exciting cultural destination with attractions for all tastes, from idyllic beach holidays and jungle explorations to world-class art museums and the pulsing rhythms of Rio's Carnival.",
     "info-gallery": [
       {"name":"Sugar Loaf", "description":"The easily recognized emblem of Rio de Janeiro, the rounded rock peak of Sugar Loaf juts out of a tree-covered promontory, rising 394 meters above the beaches and city. Its summit is one of the first places to visit for tourists, for views of Rio and the harbor, and for the thrill of riding suspended in a cable car between Sugar Loaf and the Morro da Urca, a lower peak from which a second cableway connects to the city."},
@@ -71,7 +83,10 @@
     "id": 4,
     "title": "China",
     "capital": "Beijing",
-    "currencyCode":"CNY",
+    "currency":{
+      "name": "Chinese Yuan Renminbi",
+      "code": "CNY"
+    },
     "info": "China is so vast and diverse. The western China is the wildest region where you can see the highest mountain – Mount Everest, pure Namtso Lake, wild forests, most beautiful waterscape – Jiuzhaigou Valley, etc. Well the middle and eastern area of China is featured in fabulous mountains, hills and river landscape, stunning gorges of Yangtze River, peaceful countryside and fancy terraces in Guilin, etc. While, the essence of China is the profound Chinese culture.",
     "info-gallery": [
       {"name":"The Great Wall", "description":"Averaging six to eight meters in height but rising as high as 16 meters — and wide enough in places for five horses or 10 men to pass — the wall boasts numerous battlements and watchtowers, some dating back as far as the 7th century BC, with the best-known areas added around 210 BC when its various sections were joined. Today, the most visited section of the wall is near Badaling Pass northwest of Beijing, easily reached by public transport or organized tours."},
@@ -88,7 +103,10 @@
     "id": 5,
     "title": "Mexico",
     "capital": "Mexico City",
-    "currencyCode":"MXN",
+    "currency":{
+      "name": "mexican peso",
+      "code": "MXN"
+    },
     "info": "Long a favorite vacation destination for North Americans, Mexico is also becoming increasingly popular with tourists from Europe seeking to enjoy the country's seemingly endless sunshine, stunning scenery, and beautiful sandy beaches-not to mention its astonishingly rich cultural heritage. So important are Mexico's ancient Aztec and Mayan sites and historic colonial cities that many have been designated as UNESCO World Heritage Sites, ensuring they'll remain unchanged for generations to come.",
     "info-gallery": [
       {"name":"Cancún and the Mayan Riviera", "description":"Lying along a beautiful stretch of coastline on the Gulf of Mexico are the resort destinations of Cancún, Playa del Carmen, and the island of Cozumel, collectively known as the Mayan Riviera. This magnificent area on the tip of the Yucatán Peninsula attracts some five million visitors each year, in the process generating huge tourist revenues. Despite these numbers, you're unlikely to feel like a part of a crowd due to the Riviera's wide beaches and endless crystal-clear water."},
@@ -105,7 +123,10 @@
     "id": 6,
     "title": "Belarus",
     "capital": "Minsk",
-    "currencyCode":"BYN",
+    "currency":{
+      "name": "Belarusian Ruble",
+      "code": "BYN"
+    },
     "info": "Belarus is landlocked between Poland, Lithuania, Latvia, Ukraine and Russia in the Eastern Europe. It has a large Russian influence on its architecture and culture. Belarus is a soviet Union rather than the European Union. The country is famous for its Stalinist monuments and simple yet a pleasing landscape. The capital city of Minsk itself is a home to some of the famous monuments and churches.",
     "info-gallery": [
       {"name":"Mir Castle Complex", "description":"Mir Castle is a 15th Century Gothic Style Castle located in the town of Mir. It is a UNESCO World Heritage site and a well known landmark of Belarus. The Castle is famous for its unique Belorussian architecture. The tower gate is still gives the authentic appearance since it was built in the 16th century. It has withstood the Napoleon and  the Renaissance era thus having the influences of both the cultures and architectural essence in it. There is an Italian garden in the north, and an artificial lake in the south of the Castle."},
@@ -122,7 +143,10 @@
     "id": 7,
     "title": "India",
     "capital": "Delhi",
-    "currencyCode":"INR",
+    "currency":{
+      "name": "Indian Rupee",
+      "code": "INR"
+    },
     "info": "India is a vibrant land of startling contrasts where both the traditional and modern worlds meet. The world's seventh largest nation by area and the second largest in terms of population, India boasts a rich heritage that's the result of centuries of different cultures and religions leaving their mark. Things to do for travelers include the opportunity to experience an array of sacred sites and spiritual encounters, while nature lovers will enjoy its sun-washed beaches, lush national parks, and exciting wildlife sanctuaries.",
     "info-gallery": [
       {"name":"The Taj Mahal", "description":"Perhaps India's most recognizable building, the Taj Mahal is also the world's most famous testimony to the power of love. Named after Mumtaz Mahal, the favorite wife of Emperor Shah Jahan, this most beautiful of mausoleums was begun upon her death in 1631 and took 20,000 workmen until 1648 to complete."},
