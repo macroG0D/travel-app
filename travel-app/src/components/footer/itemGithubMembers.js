@@ -10,7 +10,7 @@ const ItemGithubMembers = ({name, endLink}) => {
 				<img className="footer__content__img__git"
 						 src="/images/github.svg"
 						 alt="github" />
-				<span className="aa" >{name}</span >
+				<span >{name}</span >
 			</a >
 		</div >
 	)
