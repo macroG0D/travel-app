@@ -23,10 +23,9 @@
 
   &__infoblock {
     padding: 15px 10px;
+  }
 
-    &__capital {
-      @include body-text-md;
-    }
-
+  &__capital {
+    @include body-text-md;
   }
 }

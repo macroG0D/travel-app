@@ -12,7 +12,7 @@ const ItemCard = ({id}) => {
 			<div className="item-card item-card__content" >
 				<div className="item-card__infoblock" >
 					<h3 >{ATTRACTIONS[id].title}</h3 >
-					<p className="item-card__infoblock__capital" >{ATTRACTIONS[id].capital}</p >
+					<p className="item-card__capital" >{ATTRACTIONS[id].capital}</p >
 				</div >
 			</div >
 		</div >
