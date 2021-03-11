@@ -10,6 +10,7 @@
 
   h3 {
     @include h3;
+    color: $color-white;
   }
 
   &__content {
@@ -30,6 +31,6 @@
 
   &__capital {
     @include body-text-md;
-    color: $gray-light-color;
+    color: $color-gray-light;
   }
 }
