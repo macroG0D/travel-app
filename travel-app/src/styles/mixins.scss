@@ -2,8 +2,17 @@
   width: $xl-width-content;
   padding: 0 30px;
   margin: 40px auto;
+  display: flex;
+  justify-content: center;
   @media (max-width: $xl-width-content + 60) {
-    width: 867px;
+    width: $lg-width-content;
+  }
+  @media (max-width: $lg-width-content + 60) {
+    width: $md-width-content;
+  }
+  @media (max-width: $md-width-content + 60) {
+    max-width: $sm-width-content;
+    width: 100%;
   }
 }
 
