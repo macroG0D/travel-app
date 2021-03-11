@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import ATTRACTIONS from '../../data/ATTRACTIONS.json';
 import humidityIcon from './humidity-icon.svg';
 
-const showWeather = (weatherData) => {
+const ShowWeather = ({ weatherData }) => {
   if (!weatherData) {
     return <h1>No data yet</h1>;
   }
-
   const { main, description, icon } = weatherData.weather[0];
   const { temp, humidity } = weatherData.main;
 
@@ -50,7 +49,11 @@ const Weather = ({ id }) => {
     return () => cancelled;
   }, [capital]);
 
-  return <div className="weather-widget">{showWeather(weather)}</div>;
+  return (
+    <div className="weather-widget">
+      <ShowWeather weatherData={weather} />
+    </div>
+  );
 };
 
 export default Weather;
