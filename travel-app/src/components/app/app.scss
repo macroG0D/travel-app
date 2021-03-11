@@ -3,6 +3,14 @@ html{
   color: $secondary-color;
   background-color: $primary-color;
 }
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+a {
+  text-decoration: none;
+  color: $light-color;
+}
 .app{
   &__title{
     @include bold-font;

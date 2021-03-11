@@ -39,3 +39,11 @@
   font-size: 12px;
   line-height: 14px;
 }
+
+@mixin logo-text{
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-accent;
+  font-weight: 500;
+  margin: 0;
+}
