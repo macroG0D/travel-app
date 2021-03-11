@@ -1,6 +1,6 @@
 import React from 'react';
 import {githubMembers} from "../../data/CONSTANTS";
-import ItemGithubMembers from "./itemGithubMembers";
+import ItemGithubMember from "./itemGithubMember";
 
 const Footer = () => {
 	return (
@@ -14,8 +14,8 @@ const Footer = () => {
 				</a >
 					</span >
 				<div className="footer__github-members" >
-					{githubMembers.map(({nameEn, endLink}) =>
-						<ItemGithubMembers
+					{githubMember.map(({nameEn, endLink}) =>
+						<ItemGithubMember
 							name={nameEn}
 							endLink={endLink}
 						/>)}
