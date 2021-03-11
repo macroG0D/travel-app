@@ -47,3 +47,7 @@
   font-weight: 500;
   margin: 0;
 }
+
+@mixin mt($speed: 0.25s, $easing: ease) {
+  transition: all $speed $easing;
+}
