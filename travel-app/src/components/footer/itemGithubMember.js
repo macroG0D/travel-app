@@ -1,7 +1,7 @@
 import React from 'react';
 import {githubSrc} from "../../data/CONSTANTS";
 
-const ItemGithubMembers = ({name, endLink}) => {
+const ItemGithubMember = ({name, endLink}) => {
 	const src = `${githubSrc}${endLink}`;
 
 	return (
@@ -16,4 +16,4 @@ const ItemGithubMembers = ({name, endLink}) => {
 	)
 }
 
-export default ItemGithubMembers;
+export default ItemGithubMember;
