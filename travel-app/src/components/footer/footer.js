@@ -8,12 +8,12 @@ const Footer = () => {
 			<div className="footer__content" >
 				<span >
 					<a target='_blank' rel="noreferrer" href="https://rs.school/js/" >
-					<img className="footer__content__img__rs"
+					<img className="footer__img--rs"
 							 src="/images/rs.svg"
 							 alt="rs-school" />
 				</a >
 					</span >
-				<div className="footer__content__github-members" >
+				<div className="footer__github-members" >
 					{githubMembers.map(({nameEn, endLink}) =>
 						<ItemGithubMembers
 							name={nameEn}
