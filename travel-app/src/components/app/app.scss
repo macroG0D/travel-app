@@ -1,18 +1,20 @@
-html{
+html {
   font-family: $roboto;
   color: $color-secondary;
   background-color: $color-white;
 }
+
 body {
-  margin: 0;
   font-family: 'Roboto';
 }
+
 a {
   text-decoration: none;
   color: $color-white;
 }
-.app{
-  &__title{
+
+.app {
+  &__title {
     @include bold-font;
   }
 }
