@@ -1,3 +1,21 @@
+@mixin content-container {
+  width: $xl-width-content;
+  padding: 0 30px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  @media (max-width: $xl-width-content + 60) {
+    width: $lg-width-content;
+  }
+  @media (max-width: $lg-width-content + 60) {
+    width: $md-width-content;
+  }
+  @media (max-width: $md-width-content + 60) {
+    max-width: $sm-width-content;
+    width: 100%;
+  }
+}
+
 @mixin bold-font {
   font-weight: bold;
 }
@@ -40,10 +58,14 @@
   line-height: 14px;
 }
 
-@mixin logo-text{
+@mixin logo-text {
   font-size: 12px;
   line-height: 14px;
   color: $color-accent;
   font-weight: 500;
   margin: 0;
+}
+
+@mixin mt($speed: 0.25s, $easing: ease) {
+  transition: all $speed $easing;
 }
