@@ -1,7 +1,7 @@
 html{
   font-family: $roboto;
-  color: $secondary-color;
-  background-color: $primary-color;
+  color: $color-secondary;
+  background-color: $color-white;
 }
 body {
   margin: 0;
@@ -9,7 +9,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: $light-color;
+  color: $color-white;
 }
 .app{
   &__title{
