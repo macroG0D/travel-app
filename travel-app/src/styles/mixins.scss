@@ -1,3 +1,12 @@
+@mixin content-container {
+  width: $xl-width-content;
+  padding: 0 30px;
+  margin: 40px auto;
+  @media (max-width: $xl-width-content + 60) {
+    width: 867px;
+  }
+}
+
 @mixin bold-font {
   font-weight: bold;
 }
@@ -40,7 +49,7 @@
   line-height: 14px;
 }
 
-@mixin logo-text{
+@mixin logo-text {
   font-size: 12px;
   line-height: 14px;
   color: $color-accent;
