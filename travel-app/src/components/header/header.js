@@ -2,7 +2,7 @@ import React from 'react';
 import Search from "../search";
 import Lang from "../lang";
 
-const Header = () => {
+const Header = ({isMain}) => {
 	return (
 		<header className="header" >
 			<div className="header__content" >
@@ -10,7 +10,7 @@ const Header = () => {
 					<img src="/images/icon-travel.png" alt="travel-app" ></img >
 					<span >travelapp</span >
 				</a >
-				<Search />
+				{isMain ? <Search /> : <></>}
 				<Lang />
 			</div >
 		</header >
