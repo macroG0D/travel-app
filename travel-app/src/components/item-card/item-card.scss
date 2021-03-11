@@ -25,5 +25,6 @@
 
   &__capital {
     @include body-text-md;
+    color: $gray-light-color;
   }
 }
