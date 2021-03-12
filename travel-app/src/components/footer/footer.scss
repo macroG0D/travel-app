@@ -2,7 +2,7 @@
   background-color: $color-secondary;
 
   &__content {
-    max-width: $max-width-content;
+    max-width: $xl-width-content;
     @include body-text-sm;
     margin: 0 auto;
     padding: 38px 30px;
@@ -54,5 +54,5 @@
       padding-right: 5px;
     }
   }
-  
+
 }
