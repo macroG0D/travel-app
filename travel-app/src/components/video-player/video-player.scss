@@ -1,0 +1,15 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+
+.video-react, .video-react-video {
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.video-react-has-started .video-react-control-bar {
+  background: $color-accent;
+  color: $color-secondary;
+}
