@@ -1,14 +1,16 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useContext} from 'react';
+import Context from "../context";
 
 const Lang = () => {
+	const [lang, setLang] = useContext(Context);
+
 	useEffect(() => {
 
-
 		const langArray = [];
-		const b = document.querySelector('.b');
-		const btnSelect = document.querySelector('.btn-select');
+		const langList = document.querySelector('#lang__list');
+		const btnSelect = document.querySelector('.lang__btn-select');
+		const elements = document.querySelectorAll('.lang option');
 
-		const elements = document.querySelectorAll('.vodiapicker option');
 		Array.prototype.forEach.call(elements, (el, i) => {
 			const img = el.getAttribute('data-thumbnail');
 			const text = el.innerText;
@@ -17,49 +19,53 @@ const Lang = () => {
 			langArray.push(item);
 		});
 
-		document.querySelector('#a').innerHTML = langArray;
+		document.querySelector('#lang__list').innerHTML = langArray;
 
 		btnSelect.innerHTML = langArray[0];
 		btnSelect.setAttribute('value', 'en');
 
-		document.querySelectorAll('#a li').forEach((item) => {
+		document.querySelectorAll('#lang__list li').forEach((item) => {
 			item.addEventListener('click', function () {
 				const img = this.children[0].getAttribute('src');
 				const value = this.children[0].getAttribute('value');
-				const text = this.innerText;
+				const choseLang = this.innerText;
 				const item =
-					'<li><img src="' + img + '" alt="" /><span>' + text + '</span></li>';
+					'<li><img src="' + img + '" alt="" /><span>' + choseLang + '</span></li>';
 				btnSelect.innerHTML = item;
+				changeLang(choseLang);
 				btnSelect.setAttribute('value', value);
-				b.classList.toggle('b-hidden');
+				langList.classList.toggle('hidden');
 			});
 		});
 
 		btnSelect.addEventListener('click', () => {
-			b.classList.toggle('b-hidden');
+			langList.classList.toggle('hidden');
 		});
-	});
+	}, []);
+
+
+	const changeLang = (choseLang) => setLang(choseLang);
 
 	const Option = ({ln}) => {
 		const srcImg = `images/${ln}.svg`;
-		const isSelected = false //(ln === lang);
 		return (
-			<option value={ln} data-thumbnail={srcImg} >{ln}</option>
+			<option value={ln} data-thumbnail={srcImg}>{ln}</option>
 		)
 	};
 
 	const arr = ['en', 'ru', 'de'];
 
+
 	return (
 		<>
-			<select className="vodiapicker" >
+			<select className="lang" >
 				{arr.map((ln) => <Option ln={ln}/>)}
 			</select >
 
-			<div className="lang-select" >
-				<button className="btn-select" value="" ></button >
-				<div className="b b-hidden" >
-					<ul id="a" ></ul >
+			<div className="lang__btns">
+				<button className="lang__btn-select" value={lang} ></button >
+				<div >
+					<ul id="lang__list"  className="hidden" ></ul >
 				</div >
 			</div >
 		</>

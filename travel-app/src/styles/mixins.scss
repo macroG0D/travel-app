@@ -61,3 +61,8 @@
 @mixin mt($speed: 0.25s, $easing: ease) {
   transition: all $speed $easing;
 }
+
+@mixin img-flag {
+  width: 28px;
+  padding: 6px 4px 4px 6px;
+}
