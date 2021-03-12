@@ -14,7 +14,7 @@ const Footer = () => {
 				</a >
 					</span >
 				<div className="footer__github-members" >
-					{githubMember.map(({nameEn, endLink}) =>
+					{githubMembers.map(({nameEn, endLink}) =>
 						<ItemGithubMember
 							name={nameEn}
 							endLink={endLink}
