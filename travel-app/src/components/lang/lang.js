@@ -7,26 +7,19 @@ const Lang = () => {
 
 	const setLangList = (elements) => {
 		let langArray = '';
-		let savedLang = 'en';
+		let savedLang = langs[0];
 		Array.prototype.forEach.call(elements, (el) => {
 			const img = el.getAttribute('data-thumbnail');
-			const text = el.innerText;
 			const value = el.value;
+			const text = (value === lang) ? '' : el.innerText;
 			const item = `<li><img src="${img}" alt="" value="${value}"/><span>${text}</span></li> `;
-			console.log(value, lang)
 			if (value === lang) savedLang = item;
-		 else langArray += item;
-
+			else langArray += item;
 		});
 
 		document.querySelector('#lang__list').innerHTML = langArray;
 		return savedLang;
 	};
-
-	// useEffect(() => {
-	// 	const elements = document.querySelectorAll('.lang option');
-	// 	setLangList(elements);
-	// }, [lang]);
 
 	useEffect(() => {
 		const langList = document.querySelector('#lang__list');
@@ -35,25 +28,26 @@ const Lang = () => {
 
 		const savedLang = setLangList(elements);
 		btnSelect.innerHTML = savedLang;
- function chooseLang() {
-	 const img = this.children[0].getAttribute('src');
-	 const value = this.children[0].getAttribute('value');
-	 const choseLang = this.innerText;
-	 const item =
-		 '<li><img src="' + img + '" alt="" /><span>' + choseLang + '</span></li>';
-	 btnSelect.innerHTML = item;
-	 changeLang(choseLang);
-	 btnSelect.setAttribute('value', value);
-	 langList.classList.toggle('hidden');
- }
+
+		function chooseLang() {
+			const img = this.children[0].getAttribute('src');
+			const value = this.children[0].getAttribute('value');
+			const choseLang = this.innerText;
+			const item =
+				'<li><img src="' + img + '" alt="" /><span>' + choseLang + '</span></li>';
+			btnSelect.innerHTML = item;
+			changeLang(choseLang);
+			btnSelect.setAttribute('value', value);
+			langList.classList.toggle('hidden');
+		}
 
 		document.querySelectorAll('#lang__list li').forEach((item) => {
 			item.addEventListener('click', chooseLang);
 		});
 
- const hiddenListLang = () => {
-	 langList.classList.toggle('hidden');
- }
+		const hiddenListLang = () => {
+			langList.classList.toggle('hidden');
+		}
 
 		btnSelect.addEventListener('click', hiddenListLang);
 
@@ -63,30 +57,27 @@ const Lang = () => {
 			});
 			btnSelect.removeEventListener('click', hiddenListLang);
 		};
- 	}, [lang]);
+	}, [lang]);
 
 	const changeLang = (choseLang) => setLang(choseLang);
 
 	const Option = ({ln}) => {
 		const srcImg = `images/${ln}.svg`;
 		return (
-			<option value={ln} data-thumbnail={srcImg}>{ln}</option>
+			<option value={ln} data-thumbnail={srcImg} >{ln}</option >
 		)
 	};
-
-
-
 
 	return (
 		<>
 			<select className="lang" >
-				{langs.map((ln) => <Option ln={ln}/>)}
+				{langs.map((ln) => <Option ln={ln} key={ln}/>)}
 			</select >
 
-			<div className="lang__btns">
-				<button className="lang__btn-select" value={lang} ></button >
+			<div className="lang__btns" >
+				<button className="lang__btn-select" value='' ></button >
 				<div >
-					<ul id="lang__list"  className="hidden" ></ul >
+					<ul id="lang__list" className="hidden" ></ul >
 				</div >
 			</div >
 		</>
