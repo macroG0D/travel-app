@@ -1,51 +1,69 @@
 import React, {useEffect, useContext} from 'react';
 import Context from "../context";
+import {langs} from "../../data/CONSTANTS";
 
 const Lang = () => {
 	const [lang, setLang] = useContext(Context);
 
-	useEffect(() => {
-
-		const langArray = [];
-		let savedLang = '';
-		const langList = document.querySelector('#lang__list');
-		const btnSelect = document.querySelector('.lang__btn-select');
-		const elements = document.querySelectorAll('.lang option');
-
+	const setLangList = (elements) => {
+		let langArray = '';
+		let savedLang = 'en';
 		Array.prototype.forEach.call(elements, (el) => {
 			const img = el.getAttribute('data-thumbnail');
 			const text = el.innerText;
 			const value = el.value;
-			const item = `<li><img src="${img}" alt="" value="${value}"/><span>${text}</span></li>`;
+			const item = `<li><img src="${img}" alt="" value="${value}"/><span>${text}</span></li> `;
+			console.log(value, lang)
 			if (value === lang) savedLang = item;
-			langArray.push(item);
+		 else langArray += item;
+
 		});
 
 		document.querySelector('#lang__list').innerHTML = langArray;
+		return savedLang;
+	};
 
+	// useEffect(() => {
+	// 	const elements = document.querySelectorAll('.lang option');
+	// 	setLangList(elements);
+	// }, [lang]);
+
+	useEffect(() => {
+		const langList = document.querySelector('#lang__list');
+		const btnSelect = document.querySelector('.lang__btn-select');
+		const elements = document.querySelectorAll('.lang option');
+
+		const savedLang = setLangList(elements);
 		btnSelect.innerHTML = savedLang;
-
-		btnSelect.setAttribute('value', {lang});
+ function chooseLang() {
+	 const img = this.children[0].getAttribute('src');
+	 const value = this.children[0].getAttribute('value');
+	 const choseLang = this.innerText;
+	 const item =
+		 '<li><img src="' + img + '" alt="" /><span>' + choseLang + '</span></li>';
+	 btnSelect.innerHTML = item;
+	 changeLang(choseLang);
+	 btnSelect.setAttribute('value', value);
+	 langList.classList.toggle('hidden');
+ }
 
 		document.querySelectorAll('#lang__list li').forEach((item) => {
-			item.addEventListener('click', function () {
-				const img = this.children[0].getAttribute('src');
-				const value = this.children[0].getAttribute('value');
-				const choseLang = this.innerText;
-				const item =
-					'<li><img src="' + img + '" alt="" /><span>' + choseLang + '</span></li>';
-				btnSelect.innerHTML = item;
-				changeLang(choseLang);
-				btnSelect.setAttribute('value', value);
-				langList.classList.toggle('hidden');
+			item.addEventListener('click', chooseLang);
+		});
+
+ const hiddenListLang = () => {
+	 langList.classList.toggle('hidden');
+ }
+
+		btnSelect.addEventListener('click', hiddenListLang);
+
+		return () => {
+			document.querySelectorAll('#lang__list li').forEach((item) => {
+				item.removeEventListener('click', chooseLang);
 			});
-		});
-
-		btnSelect.addEventListener('click', () => {
-			langList.classList.toggle('hidden');
-		});
-	}, []);
-
+			btnSelect.removeEventListener('click', hiddenListLang);
+		};
+ 	}, [lang]);
 
 	const changeLang = (choseLang) => setLang(choseLang);
 
@@ -56,13 +74,13 @@ const Lang = () => {
 		)
 	};
 
-	const arr = ['en', 'ru', 'de'];
+
 
 
 	return (
 		<>
 			<select className="lang" >
-				{arr.map((ln) => <Option ln={ln}/>)}
+				{langs.map((ln) => <Option ln={ln}/>)}
 			</select >
 
 			<div className="lang__btns">
