@@ -7,22 +7,25 @@ const Lang = () => {
 	useEffect(() => {
 
 		const langArray = [];
+		let savedLang = '';
 		const langList = document.querySelector('#lang__list');
 		const btnSelect = document.querySelector('.lang__btn-select');
 		const elements = document.querySelectorAll('.lang option');
 
-		Array.prototype.forEach.call(elements, (el, i) => {
+		Array.prototype.forEach.call(elements, (el) => {
 			const img = el.getAttribute('data-thumbnail');
 			const text = el.innerText;
 			const value = el.value;
 			const item = `<li><img src="${img}" alt="" value="${value}"/><span>${text}</span></li>`;
+			if (value === lang) savedLang = item;
 			langArray.push(item);
 		});
 
 		document.querySelector('#lang__list').innerHTML = langArray;
 
-		btnSelect.innerHTML = langArray[0];
-		btnSelect.setAttribute('value', 'en');
+		btnSelect.innerHTML = savedLang;
+
+		btnSelect.setAttribute('value', {lang});
 
 		document.querySelectorAll('#lang__list li').forEach((item) => {
 			item.addEventListener('click', function () {
