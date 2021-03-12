@@ -14,6 +14,10 @@ a {
 }
 
 .app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   &__title {
     @include bold-font;
   }
