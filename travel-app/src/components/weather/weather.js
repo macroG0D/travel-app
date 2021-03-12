@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ATTRACTIONS from '../../data/ATTRACTIONS.json';
+import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
 import humidityIcon from './humidity-icon.svg';
 
 const ShowWeather = ({ weatherData }) => {
