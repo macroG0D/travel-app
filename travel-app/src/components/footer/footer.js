@@ -16,6 +16,7 @@ const Footer = () => {
 				<div className="footer__github-members" >
 					{githubMembers.map(({nameEn, endLink}) =>
 						<ItemGithubMember
+              key={`developer${nameEn}`}
 							name={nameEn}
 							endLink={endLink}
 						/>)}

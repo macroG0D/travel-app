@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import Context from "../context";
 import Header from "../header";
+import Footer from "../footer";
 import Main from "../../pages/main";
+// import ExchangeRates from "../exchange-rates";
+// import Weather from "../weather";
 
 const App = () => {
 	const selectedLang = localStorage.getItem('lang') || 'en';
@@ -18,9 +21,9 @@ const App = () => {
 			<div className="app" >
 				<Header isMain="true" />
 				<Main />
+        <Footer />
 			</div >
 		</Context.Provider >
 	)
-};
 
 export default App;
