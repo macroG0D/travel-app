@@ -1,18 +1,20 @@
 import React from 'react';
-import Header from "../header";
-import Footer from "../footer";
-import Main from "../../pages/main";
+import Header from '../header';
+import Footer from '../footer';
+import Main from '../../pages/main';
+import CountryPage from '../../pages/country';
 // import ExchangeRates from "../exchange-rates";
 // import Weather from "../weather";
 
 const App = () => {
-  return(
+  return (
     <div className="app">
-        <Header isMain="true" />
-        <Main />
-        <Footer />
+      <Header isMain="true" />
+      {/* <Main /> */}
+      <CountryPage id="0" />
+      <Footer />
     </div>
-  )
+  );
 };
 
 export default App;
