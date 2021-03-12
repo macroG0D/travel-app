@@ -1,3 +1,5 @@
+@import '../node_modules/normalize-scss/sass/normalize/import-now';
+
 @import './styles/vars.scss';
 @import './styles/mixins.scss';
 
@@ -8,6 +10,7 @@
 @import './components/footer/footer.scss';
 @import './components/item-card/item-card.scss';
 @import './components/exchange-rates/exchange-rates.scss';
+@import './components/weather/weather.scss';
 
 @import './pages/main/main.scss';
 @import './pages/country/country.scss';

@@ -1,0 +1,32 @@
+.header {
+  background-color: $color-gray-light;
+
+  &__content {
+    max-width: $xl-width-content;
+    margin: 0 auto;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+
+    @media (max-width: 640px) {
+      flex-wrap: wrap;
+      &:after {
+        content: '';
+        width: 100%;
+        order: 0;
+      }
+
+      &>*:nth-child(2) {
+        order: 1;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__logo {
+    width: 97px;
+  }
+
+}
