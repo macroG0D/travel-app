@@ -1,27 +1,28 @@
-import React, {useState, useEffect} from 'react';
-import Context from "../context";
-import Header from "../header";
-import Footer from "../footer";
-import Main from "../../pages/main";
+import React, { useState, useEffect } from 'react';
+import Context from '../context';
+import Header from '../header';
+import Footer from '../footer';
+import Main from '../../pages/main';
 
 const App = () => {
-	const selectedLang = localStorage.getItem('lang') || 'en';
-	const [lang, setLang] = useState(selectedLang);
-	const saveLang = () => localStorage.setItem('lang', lang);
+  const selectedLang = localStorage.getItem('lang') || 'en';
+  const [lang, setLang] = useState(selectedLang);
+  const saveLang = () => localStorage.setItem('lang', lang);
 
-	useEffect(() => {
-		window.addEventListener('unload', saveLang);
-		return () => window.removeEventListener('unload', saveLang);
-	});
+  useEffect(() => {
+    window.addEventListener('unload', saveLang);
+    return () => window.removeEventListener('unload', saveLang);
+  });
 
-	return (
-		<Context.Provider value={[lang, setLang]} >
-			<div className="app" >
-				<Header isMain="true" />
-				<Main />
+  return (
+    <Context.Provider value={[lang, setLang]}>
+      <div className="app">
+        <Header isMain="true" />
+        <Main />
         <Footer />
-			</div >
-		</Context.Provider >
-	)
+      </div>
+    </Context.Provider>
+  );
+};
 
 export default App;
