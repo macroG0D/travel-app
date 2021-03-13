@@ -1,36 +1,103 @@
-.image-gallery-slide {
-  .image-gallery-image {
-    width: 963px;
-  }
-
-  //.image-gallery-description {
-  //  @include body-text-md;
-  //  position: absolute;
-  //  z-index: 1;
-  //  bottom: -20px;
-  //
-  //}
-}
-
 .image-gallery {
   background-color: $color-gray-light;
 
   .image-gallery-content {
     max-width: $xl-width-content;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      max-width: $lg-width-content;
+    }
+
+    @media (max-width: 1000px) {
+      max-width: $md-width-content;
+    }
+
+    @media (max-width: 640px) {
+      max-width: $sm-width-content;
+    }
+
+    .image-gallery-thumbnails-wrapper {
+      width: $preview-img;
+      @media (max-width: 1000px) {
+        display: none;
+      }
+    }
   }
 
   .image-gallery-slide-wrapper {
     position: relative;
+    width: calc(100% - 250px);
+    max-height: 567px;
+    overflow: hidden;
+
+    @media(max-width: 1200px) {
+      max-height: 435px;
+    }
+
+    @media(max-width: 1000px) {
+      width: 100%;
+      padding: 0 20px;
+      max-height: 357px;
+    }
+
+    @media(max-width: 640px) {
+      width: 100%;
+      padding: 0;
+    }
 
     .image-gallery-left-nav {
       position: absolute;
-      left: 12%;
+      left: 0;
     }
 
     .image-gallery-right-nav {
       position: absolute;
-      right: 12%;
+      right: 0;
+    }
+
+    .image-gallery-fullscreen-button {
+      position: absolute;
+      right: 0;
+    }
+
+    .image-gallery-bullets .image-gallery-bullet {
+      &:hover {
+        background: $color-gray-light;
+      }
+    }
+  }
+}
+
+.image-gallery-icon {
+  color: $color-gray-light;
+
+  &:hover, .image-gallery-svg:hover {
+    color: $color-white;
+  }
+}
+
+.image-gallery-thumbnails-container .image-gallery-thumbnail {
+  width: $preview-img;
+
+  div img {
+    width: $preview-img-inner;
+  }
+}
+
+.image-gallery-slide {
+  .image-gallery-image {
+    min-height: 567px;
+    object-fit: cover;
+
+    @media(max-width: 1200px) {
+      min-height: 435px;
+    }
+
+    @media(max-width: 1000px) {
+      min-height: 357px;
     }
   }
 }

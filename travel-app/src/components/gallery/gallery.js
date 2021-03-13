@@ -12,7 +12,6 @@ const Gallery = ({id}) => {
 
 
   const images = infoGallery.map(({name, description}, ind) => {
-    console.log(`${srcImage}/${ind}.jpg`)
     return {
       thumbnail: `${srcImage}/${ind}.jpg`,
       original: `${srcImage}/${ind}.jpg`,
@@ -26,6 +25,7 @@ const Gallery = ({id}) => {
     items={images}
     thumbnailPosition='right'
     showPlayButton={false}
+    showBullets={true}
   />;
 };
 
