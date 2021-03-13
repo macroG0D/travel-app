@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Context from "../context";
 import Header from "../header";
 import Main from "../../pages/main";
-import Gallery from "../gallery";
 
 const App = () => {
 	const selectedLang = localStorage.getItem('lang') || 'en';
@@ -18,7 +17,6 @@ const App = () => {
 		<Context.Provider value={[lang, setLang]} >
 			<div className="app" >
 				<Header isMain="true" />
-				<Gallery id='1'/>
 				<Main />
 			</div >
 		</Context.Provider >
