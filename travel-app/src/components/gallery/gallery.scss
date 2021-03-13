@@ -1,0 +1,36 @@
+.image-gallery-slide {
+  .image-gallery-image {
+    width: 963px;
+  }
+
+  //.image-gallery-description {
+  //  @include body-text-md;
+  //  position: absolute;
+  //  z-index: 1;
+  //  bottom: -20px;
+  //
+  //}
+}
+
+.image-gallery {
+  background-color: $color-gray-light;
+
+  .image-gallery-content {
+    max-width: $xl-width-content;
+    margin: 0 auto;
+  }
+
+  .image-gallery-slide-wrapper {
+    position: relative;
+
+    .image-gallery-left-nav {
+      position: absolute;
+      left: 12%;
+    }
+
+    .image-gallery-right-nav {
+      position: absolute;
+      right: 12%;
+    }
+  }
+}
