@@ -27,4 +27,6 @@ const githubMembers = [
 	}
 ];
 
-export {githubSrc, githubMembers};
+const langs = ['en', 'ru', 'de'];
+
+export {githubSrc, githubMembers, langs};
