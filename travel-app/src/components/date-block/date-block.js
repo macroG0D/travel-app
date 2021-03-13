@@ -34,7 +34,7 @@ const getLocalTime = (date, id) => {
   const second = date.toLocaleString("en-GB", { timeZone, second: "numeric" });
 
 
-  return `${hour < 10 ? hour.slice(0, 1) : hour}:${minute < 10 ? `0${minute}` : minute}:${second < 10 ? `0${second}` : second}`;
+  return `${hour}:${minute < 10 ? `0${minute}` : minute}:${second < 10 ? `0${second}` : second}`;
 }
 
 const DateBlock = ({ id }) => {
@@ -52,7 +52,7 @@ const DateBlock = ({ id }) => {
       setDate(getLocalDate(new Date(), id, lang));
       setTime(getLocalTime(new Date(), id));
     }, 1000);
-  }, [date, time]);
+  }, [date, time, id]);
 
   return (
     <div className="date-block">
