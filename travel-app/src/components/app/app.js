@@ -20,7 +20,7 @@ const App = () => {
       <div className="app">
         <Header isMain="true" />
         {/* <Main /> */}
-        <Country id="1" />
+        <Country id="0" />
         <Footer />
       </div>
     </Context.Provider>
