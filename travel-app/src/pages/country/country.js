@@ -38,12 +38,11 @@ const InnerAbout = ({ id }) => {
 };
 
 const InnerVideo = ({ id }) => {
-  const { title, video } = getCountryData(id);
+  const { title } = getCountryData(id);
   return (
     <div className="inner-video">
       <h2>About {title}</h2>
-      {/* NO HOSTED VIDEO YET */}
-      <VideoPlayer src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+      <VideoPlayer countryName={title} />
     </div>
   );
 };
