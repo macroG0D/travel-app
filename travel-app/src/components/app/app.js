@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Context from '../context';
 import Header from '../header';
 import Footer from '../footer';
-import Main from '../../pages/main';
+// import Main from '../../pages/main';
+import Country from '../../pages/country';
 
 const App = () => {
   const selectedLang = localStorage.getItem('lang') || 'en';
@@ -18,8 +19,9 @@ const App = () => {
   return (
     <Context.Provider value={[lang, setLang]}>
       <div className="app">
-        <Header isMain="true" updateFilter={setFilterVal}/>
-        <Main filterVal={filterVal}/>
+        <Header isMain="true" updateFilter={setFilterVal} />
+        <Main filterVal={filterVal} />
+        {/* <Country id="0" /> */}
         <Footer />
       </div>
     </Context.Provider>
