@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
+import {BrowserRouter} from 'react-router-dom';
+import Switcher from '../switcher';
 import { Context, ContextID } from '../context';
 import Header from '../header';
 import Footer from '../footer';
-import Main from '../../pages/main';
-import Country from '../../pages/country';
 
 const App = () => {
   const selectedLang = localStorage.getItem('lang') || 'en';
@@ -17,17 +17,17 @@ const App = () => {
   });
 
   const id = 5;
-
   return (
     <Context.Provider value={[lang, setLang]}>
-      <div className="app">
-        <Header isMain="true" updateFilter={setFilterVal} />
-        <Main filterVal={filterVal} />
-        <ContextID.Provider value={id}>
-          <Country value='5'/>
-        </ContextID.Provider>
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div className="app">
+          <Header updateFilter={setFilterVal}/>
+          <ContextID.Provider value={id}>
+          <Switcher  filterVal={filterVal}/>
+          </ContextID.Provider>
+          <Footer/>
+        </div>
+      </BrowserRouter>
     </Context.Provider>
   );
 };
