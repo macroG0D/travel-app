@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {BrowserRouter} from 'react-router-dom';
-import Context from '../context';
 import Switcher from '../navigation';
+import React, { useState, useEffect } from 'react';
+import { Context, ContextID } from '../context';
 import Header from '../header';
 import Footer from '../footer';
 
@@ -16,12 +17,16 @@ const App = () => {
     return () => window.removeEventListener('unload', saveLang);
   });
 
+  const id = 5;
+
   return (
     <Context.Provider value={[lang, setLang]}>
       <BrowserRouter>
         <div className="app">
           <Header isMain="true" updateFilter={setFilterVal}/>
-          <Switcher  filterVal={filterVal} />
+          <ContextID.Provider value={id}>
+          <Switcher  filterVal={filterVal}/>
+          </ContextID.Provider>
           <Footer/>
         </div>
       </BrowserRouter>
