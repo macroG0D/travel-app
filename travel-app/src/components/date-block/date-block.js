@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import ATTRACTIONS from "../../data/ATTRACTIONS.json";
+import ATTRACTIONS from "../../data/ATTRACTIONSEN.json";
 // import Context from "../context";
 
 const capitalizeFirstLetter = (string) => {

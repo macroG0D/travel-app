@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext, useMemo, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, GeoJSON, ScaleControl, useMap } from 'react-leaflet';
 import * as L from 'leaflet';
-import ATTRACTIONS from '../../data/ATTRACTIONS.json';
+import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
 import geoJSON from '../../data/geoJSON.json';
 // import Context from "../context";
 
