@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {BrowserRouter} from 'react-router-dom';
-import Switcher from '../navigation';
-import React, { useState, useEffect } from 'react';
+import Switcher from '../switcher';
 import { Context, ContextID } from '../context';
 import Header from '../header';
 import Footer from '../footer';
@@ -18,12 +17,11 @@ const App = () => {
   });
 
   const id = 5;
-
   return (
     <Context.Provider value={[lang, setLang]}>
       <BrowserRouter>
         <div className="app">
-          <Header isMain="true" updateFilter={setFilterVal}/>
+          <Header updateFilter={setFilterVal}/>
           <ContextID.Provider value={id}>
           <Switcher  filterVal={filterVal}/>
           </ContextID.Provider>
