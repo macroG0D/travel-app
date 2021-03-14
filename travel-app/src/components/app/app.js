@@ -7,6 +7,7 @@ import Main from '../../pages/main';
 const App = () => {
   const selectedLang = localStorage.getItem('lang') || 'en';
   const [lang, setLang] = useState(selectedLang);
+  const [filterVal, setFilterVal] = useState('');
   const saveLang = () => localStorage.setItem('lang', lang);
 
   useEffect(() => {
@@ -17,8 +18,8 @@ const App = () => {
   return (
     <Context.Provider value={[lang, setLang]}>
       <div className="app">
-        <Header isMain="true" />
-        <Main />
+        <Header isMain="true" updateFilter={setFilterVal}/>
+        <Main filterVal={filterVal}/>
         <Footer />
       </div>
     </Context.Provider>
