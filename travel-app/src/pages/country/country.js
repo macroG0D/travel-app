@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import VideoPlayer from '../../components/video-player';
 import DateBlock from '../../components/date-block';
 import ExchangeRates from '../../components/exchange-rates';
 import Weather from '../../components/weather';
 import Map from '../../components/map';
+import Gallery from '../../components/gallery';
 import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
+import { ContextID } from '../../components/context';
 
 const getCountryData = (id) => {
   return ATTRACTIONS[id];
 };
 
-const InnerMain = ({ id }) => {
+const InnerMain = () => {
+  const id = useContext(ContextID);
   const { title, capital } = getCountryData(id);
 
   const mainBgImage = {
@@ -29,7 +32,8 @@ const InnerMain = ({ id }) => {
   );
 };
 
-const InnerAbout = ({ id }) => {
+const InnerAbout = () => {
+  const id = useContext(ContextID);
   const { info } = getCountryData(id);
   return (
     <div className="inner-about">
@@ -38,7 +42,8 @@ const InnerAbout = ({ id }) => {
   );
 };
 
-const InnerVideo = ({ id }) => {
+const InnerVideo = () => {
+  const id = useContext(ContextID);
   const { title } = getCountryData(id);
   return (
     <div className="inner-video">
@@ -48,21 +53,21 @@ const InnerVideo = ({ id }) => {
   );
 };
 
-const InnerGallery = ({ id }) => {
+const InnerGallery = () => {
+  const id = useContext(ContextID);
   const { title } = getCountryData(id);
   return (
     <div className="inner-gallery">
       <div className="inner-gallery__content">
         <h2>Attractions in {title}</h2>
-        <div className="inner-gallery__gallery-wrapper">
-          gallery placeholder
-        </div>
+        <Gallery />
       </div>
     </div>
   );
 };
 
-const InnerWidgets = ({ id }) => {
+const InnerWidgets = () => {
+  const id = useContext(ContextID);
   const { capital } = getCountryData(id);
   return (
     <div className="inner-widgets">
@@ -78,7 +83,8 @@ const InnerWidgets = ({ id }) => {
   );
 };
 
-const InnerMap = ({ id }) => {
+const InnerMap = () => {
+  const id = useContext(ContextID);
   const { capital } = getCountryData(id);
   return (
     <div className="inner-map">
@@ -88,16 +94,15 @@ const InnerMap = ({ id }) => {
   );
 };
 
-const Country = (props) => {
-  const { id } = props;
+const Country = () => {
   return (
     <div>
-      <InnerMain id={id} />
-      <InnerAbout id={id} />
-      <InnerVideo id={id} />
-      <InnerGallery id={id} />
-      <InnerWidgets id={id} />
-      <InnerMap id={id} />
+      <InnerMain />
+      <InnerAbout />
+      <InnerVideo />
+      <InnerGallery />
+      <InnerWidgets />
+      <InnerMap />
     </div>
   );
 };

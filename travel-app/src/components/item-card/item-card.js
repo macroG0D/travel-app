@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Context from '../context';
+import { Context } from '../context';
 import { ATTRACTIONSEN, ATTRACTIONSRU, ATTRACTIONSDE } from '../../data';
 
 const ItemCard = ({ id }) => {
