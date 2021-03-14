@@ -3,6 +3,7 @@ import VideoPlayer from '../../components/video-player';
 import DateBlock from '../../components/date-block';
 import ExchangeRates from '../../components/exchange-rates';
 import Weather from '../../components/weather';
+import Map from '../../components/map';
 import ATTRACTIONS from '../../data/ATTRACTIONS.json';
 
 const getCountryData = (id) => {
@@ -82,7 +83,7 @@ const InnerMap = ({ id }) => {
   return (
     <div className="inner-map">
       <h2>Location of {capital}</h2>
-      <div className="inner-map__map-wrapper">map placeholder</div>
+      <Map id={id} />
     </div>
   );
 };
