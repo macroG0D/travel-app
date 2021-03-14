@@ -3,8 +3,8 @@ import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
 import {NavLink} from 'react-router-dom';
 
 const Main = ({filterVal}) => {
-  const trimmedFilter = filterVal ? filterVal.trim().toLowerCase() : '';
-  const filterIsEmpty = trimmedFilter;
+  const trimmedFilter = filterVal.trim().toLowerCase();
+  const filterIsEmpty = trimmedFilter === '';
 
   const filteredAttractions = filterIsEmpty ? ATTRACTIONS :
     ATTRACTIONS.filter(({title, capital}) => title.toLowerCase().includes(trimmedFilter) || capital.toLowerCase().includes(trimmedFilter));
