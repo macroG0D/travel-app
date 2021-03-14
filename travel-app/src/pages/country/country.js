@@ -51,9 +51,8 @@ const InnerAbout = () => {
 };
 
 const InnerVideo = () => {
-  const [lang] = useContext(Context);
   const id = useContext(ContextID);
-  const { title } = getCountryData(lang, id);
+  const { title } = getCountryData('en', id);
   return (
     <div className="inner-video">
       <h2>About {title}</h2>
