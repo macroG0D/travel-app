@@ -1,14 +1,7 @@
 .weather-widget {
-  background-color: $color-gray-light;
-  width: 373px;
-  height: 200px;
-  display: flex;
+  @include widgets-common-style;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
-  user-select: none;
-
   &__temp,
   &__humidity-wrapper {
     font-family: Roboto;
@@ -57,10 +50,5 @@
 
   @media (max-width: $md-width-content + 60) {
     width: 300px;
-  }
-
-  @include mt;
-  &:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
   }
 }

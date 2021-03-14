@@ -1,10 +1,5 @@
 .exchange-rates{
-  background-color: #f2f2f2;
-  width: 373px;
-  height: 203px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include widgets-common-style;
   justify-content: center;
   @media (max-width: $md-width-content + 60) {
     width: 300px;

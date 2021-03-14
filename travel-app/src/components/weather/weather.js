@@ -7,7 +7,6 @@ const ShowWeather = ({ weatherData }) => {
   if (!weatherData) {
     return <h1>No data yet</h1>;
   }
-  console.log(weatherData);
   const { description, icon } = weatherData.weather[0];
   const { temp, humidity } = weatherData.main;
 

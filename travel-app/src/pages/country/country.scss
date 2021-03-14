@@ -78,6 +78,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    @media (max-width: $xl-width-content + 60) {
+      justify-content: space-evenly;
+    }
     @media (max-width: $md-width-content) {
       flex-direction: column;
     }
