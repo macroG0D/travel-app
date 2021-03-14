@@ -17,7 +17,7 @@
       {"name":"Kakadu National Park", "description": "Kakadu National Park, in the Top End or the Northern Territory, is a World Heritage Site and one of the planet's great wilderness areas. Covering more than 19,840 square kilometers, Kakadu is the largest national park in Australia and the second largest in the world. Within its borders lie monsoon rainforests, mangrove swamps, rivers, gorges, ancient rock paintings, wetlands, and waterfalls, as well as an astounding diversity of wildlife."}
     ],
     "video": "https://youtu.be/PdVLk_dPmtc",
-    "coordinates": ""
+    "coordinates": [-35.28346, 149.12807]
   },
   {
     "id": 1,
@@ -37,7 +37,7 @@
       {"name":"Provence", "description":"Provence is a gorgeous landscape of olive groves, sun-drenched rolling hills, and deep purple lavender fields, with little villages nestled in the valleys and perched on rocky outcrops. The vibrant scenery has enchanted many famous artists, including Cézanne, Matisse, Chagall, and Picasso. The rustic natural beauty and country charm of Provence immerses visitors in a place where the art de vivre is a way of life."}
     ],
     "video": "https://youtu.be/zTjnQ0XlAc4",
-    "coordinates": ""
+    "coordinates": [48.85341, 2.3488]
   },
   {
     "id": 2,
@@ -57,7 +57,7 @@
       {"name":"Plaza Mayor", "description":"The throbbing heartbeat of Spain's vibrant capital city, Plaza Mayor has played an important part in Madrid life since the 16th century, when Philip II entrusted the task of designing it to his favorite architect Juan de Herrera, builder of the Escorial. It has served as the stage for ceremonial events — the proclamation of a new king, the canonization of saints, the burning of heretics — and public entertainment such as chivalric tournaments and bullfights."}
     ],
     "video": "https://youtu.be/L5JORXmV_A0",
-    "coordinates": ""
+    "coordinates": [40.4165, -3.70256]
   },
   {
     "id": 3,
@@ -77,7 +77,7 @@
       {"name":"Amazon Rain Forests", "description":"About 20 kilometers southeast of Manaus, the dark Rio Negro waters meet the light muddy water of the Rio Solimões, flowing side by side for about six kilometers before mixing as the Amazon. Boat trips from Manaus take you to this point, called Encontro das Aguas, meeting of the waters."}
     ],
     "video" : "https://youtu.be/q7zdJ-nMrlE",
-    "coordinates": ""
+    "coordinates": [-15.77972, -47.92972]
   },
   {
     "id": 4,
@@ -97,7 +97,7 @@
       {"name":"Leshan Giant Buddha", "description":"\"The mountain is a Buddha and the Buddha is a mountain.\" So goes the famous Chinese saying, one that's attributed to the spectacular 71-meter-tall Leshan Giant Buddha. And it certainly makes sense as you stand at its feet as the colossal statue towers high above you. Started in AD 713 by a Buddhist monk and completed 90 years later, this important religious icon is carved entirely from a stone cliff-face and is the largest Buddha sculpture in the world."}
     ],
     "video": "https://youtu.be/efHyAyT4Fko",
-    "coordinates": ""
+    "coordinates": [39.9075, 116.39723]
   },
   {
     "id": 5,
@@ -117,7 +117,7 @@
       {"name":"Yucatán's White City", "description":"The capital of Yucatán, Mérida is one of Mexico's finest old colonial cities and is perfectly located to serve as a base from which to explore the region's many fine Mayan sites, including Chichén Itzá and Tulum. It's an equally popular day trip or overnight stopover from the resorts of the Mayan Riviera. Established in 1542 by the Spanish, Mérida is laid out on a grid pattern, making it easy to explore its numerous attractive parks and fine old buildings."}
     ],
     "video": "https://youtu.be/n8HTyJPXVug",
-    "coordinates": ""
+    "coordinates": [19.4263466279, -99.1266128269]
   },
   {
     "id": 6,
@@ -137,7 +137,7 @@
       {"name":"Belovezhskaya Pushcha National Park", "description":"Belovezhskaya Pushcha National Park covers both Belarus and neighbouring Poland, and is a protected area of land as well as a UNESCO World Heritage Site. The park is famous for its lush landscapes and flora and fauna, the most notable of which is the European Bison, and is one of the few places in the world where these majestic animals can be viewed in their natural habitat. As well as bison, there are also semi-wild horse known as konik, wild boar, and Eurasian elk found in the park. If you should happen to come here during the winter months, there is a holiday museum that is set up at the park that features the Belarusian version of Father Christmas and is bound to be a hit with younger visitors."}
     ],
     "video": "https://youtu.be/QNdYybI3Pgs",
-    "coordinates": ""
+    "coordinates": [53.9, 27.56667]
   },
   {
     "id": 7,
@@ -157,6 +157,6 @@
       {"name":"Periyar National Park and Wildlife Sanctuary", "description":"One of South India's most popular tourist attractions, Periyar National Park and Wildlife Sanctuary is centered around a lake built by British engineers in 1895 for irrigation and to provide water to the city of Madurai. Established in 1934, this beautiful park is home to numerous species of mammals, including a large free-roaming Indian elephant population, wild boar, otters, the lion-tailed macaque, and more than 20 Bengal tigers. Bird watching is a popular activity with frequent sightings of species such as darters, storks, kingfishers, hornbills, and racket-tailed drongos, along with many interesting varieties of butterflies."}
     ],
     "video": "https://youtu.be/IgAnj6r1O48",
-    "coordinates": ""
+    "coordinates": [28.63576, 77.22445]
   }
 ]
