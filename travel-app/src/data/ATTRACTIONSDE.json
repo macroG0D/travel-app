@@ -224,37 +224,37 @@
   },
   {
     "id": 6,
-    "title": "Weißrussland",
-    "capital": "Minsk",
+    "title": "Italien",
+    "capital": "Rom",
     "currency": {
-      "name": "Weißrussischer Rubel",
-      "code": "BYN"
+      "name": "Euro",
+      "code": "EUR"
     },
-    "info": "Weißrussland liegt zwischen Polen, Litauen, Lettland, der Ukraine und Russland in Osteuropa. Es hat einen großen russischen Einfluss auf seine Architektur und Kultur. Weißrussland ist eher eine Sowjetunion als die Europäische Union. Das Land ist berühmt Die Hauptstadt Minsk selbst beherbergt einige der berühmten Denkmäler und Kirchen.",
+    "info": "Italien ist ein Land, das aus einem kontinentalen Teil besteht, der von den Alpen, einer Halbinsel und mehreren umliegenden Inseln begrenzt wird. Italien liegt in Südeuropa und gilt auch als Teil Westeuropas. Eine einheitliche parlamentarische Republik mit Rom Als Hauptstadt grenzt das Land an Frankreich, die Schweiz, Österreich, Slowenien und die Enklaven der Vatikanstadt und San Marino. Italien ist mit rund 60 Millionen Einwohnern der drittgrößte Mitgliedstaat der Europäischen Union.",
     "info-gallery": [
       {
-        "name": "Mir Castle Complex",
-        "description": "Das Schloss Mir ist ein Schloss im gotischen Stil aus dem 15. Jahrhundert in der Stadt Mir. Es gehört zum UNESCO-Weltkulturerbe und ist ein bekanntes Wahrzeichen von Belarus. Das Schloss ist berühmt für seine einzigartige belorussische Architektur Es hat immer noch das authentische Aussehen, seit es im 16. Jahrhundert erbaut wurde. Es hat dem Napoleon und der Renaissance standgehalten und hat somit die Einflüsse sowohl der Kulturen als auch der architektonischen Essenz. Im Norden gibt es einen italienischen Garten und einen künstlichen See im Süden des Schlosses."
+        "name": "Colosseum",
+        "description": "Dieses riesige Amphitheater, das größte seiner Art, das jemals vom Römischen Reich erbaut wurde, und das größte seiner überlebenden Konstruktionen, blieb bis in die Neuzeit ein Vorbild für Sportanlagen. Erbaut von Vespasian im Jahr 72 n. Chr. Und erweitert um eine vierte Geschichte seines Sohnes Titus, war es ein Ort für öffentliche Spektakel und Shows - sogar für Scheinseeschlachten."
       },
       {
-        "name": "Victoria Square",
-        "description": "Der Victoria-Platz, einer der wichtigsten Orte in Weißrussland, ist sowohl eine berühmte Touristenattraktion als auch ein Wallfahrtsort, der zu Ehren derjenigen errichtet wurde, die im Großen Vaterländischen Krieg (2. Weltkrieg) starben Früher als Victoria Circus bekannt und eine Nachbildung des Roten Platzes von Moskau. In der Mitte des Platzes ist eine 38-Meter-Säule oder ein Obelisk aufgestellt, und eine 3-Meter-Nachbildung des Siegesordens befindet sich oben auf dem Platz Die Basis des Denkmals ist mit vier Facetten graviert, auf denen Bilder vom 9. Mai 1945, dem Tag des Sieges, den Partisanen von Belarus, dem Ruhm der gefallenen Helden und der sowjetischen Armee während des Großen Vaterländischen Krieges abgebildet sind."
+        "name": "Florenzer Dom Santa Maria del Fiore",
+        "description": "Der Dom Santa Maria del Fiore oder die Kathedrale Santa Maria del Fiore gelten als eine der schönsten Kathedralen der Welt und dominieren die Skyline von Florenz Die Kathedrale wurde zwischen dem 13. und 15. Jahrhundert erbaut. Das berühmteste Stück ist die außergewöhnliche Kuppel, die 1434 von Filippo Brunelleschi fertiggestellt wurde."
       },
       {
-        "name": "Gomel Palace",
-        "description": "Das Gomel Palace & Park Ensemble ist ein altes Anwesen, das vom Park dekoriert wurde und sich am Ufer des Flusses Sozh in Süd-Weißrussland befindet. Der derzeit stehende Palast wurde durch die Burgruine von Gomel ersetzt. Der Hauptportikus befindet sich auf eine hohe Plattform und wird von vier korinthischen Säulen getragen. Der zentrale Teil hat eine breite flache Kuppel und es gibt einen weitläufigen Park vor dem Palast. Es war ein verstaatlichtes lokales Museum nach der russischen Revolution. Der Palast hat neoklassizistische Innenräume und es gibt interessante Ausstellungen wie 'Gomel Land Fauna' und 'Mysterious Sea Fantasies."
+        "name": "Der Canal Grande in Venedig",
+        "description": "Eine Gondelfahrt durch die Kanäle von Venedig ist eine Tradition, die Reisende seit Jahrhunderten genießen. Venedig ist eine Stadt der Inseln, und die Kanäle sind es schon lange Die Hauptstraßen der Stadt, die durch ein Labyrinth von engen Gängen verbunden sind. Der Canal Grande ist die größte und berühmteste dieser Wasserstraßen und schneidet einen breiten S-förmigen Weg durch die Stadt. An seinen Seiten befinden sich die größten der Paläste, die einst im Besitz der Stadt waren reichste und mächtigste Familien der venezianischen Republik. Der beste Weg, um viele der großen Paläste zu sehen, deren Fronten dem Wasser zugewandt sind, ist eine Vaporetto-Fahrt entlang des Canal Grande."
       },
       {
-        "name": "Nesvizh Castle",
-        "description": "Es ist eine der ältesten Siedlungen und die berühmtesten Orte von Belarus. Das Schloss von Nesvizh gilt als der schönste Ort des Landes. Die reiche und vielfältige Architektur, wenn das Schloss es zu einem der meistbesuchten macht Es befand sich einst im Besitz der Magnatenfamilie Radziwill, der wichtigsten und wohlhabendsten Clans der Großniederländer Litauens. Heute gehört das Schloss zum nationalen historischen und kulturellen Reservat und gehört zum UNESCO-Weltkulturerbe Der Komplex verfügt über einen Palast, ein Rathaus, ein Handwerkerhaus, zwei Klöster und eine Kirche. Auf dem Gelände des Komplexes befinden sich ein Garten und ein See."
+        "name": "Pompeji und der Vesuv",
+        "description": "Der immer noch rauchende Vulkan des Vesuv blickt auf die Überreste der Stadt, die er 79 n. Chr. zerstört hat. Aber dieser Ausbruch hat auch viele Kunstwerke der Stadt bewahrt Schätze: Fresken, Mosaike und Skulpturen, die beim Abkühlen in die Lava eingeschlossen wurden. Mehrere Jahrhunderte von Ausgrabungen haben die Überreste von Häusern, Märkten, Bädern, Tempeln, Theatern, Straßen und menschlichen Überresten enthüllt. Besucher können das Gelände besichtigen und spazieren gehen entlang der alten Straßen, die von den Spuren von Streitwagen gezeichnet sind, und sehen Sie die Technik, die die Römer vor mehr als 2.000 Jahren verwendeten."
       },
       {
-        "name": "Belarussisches Museum des Großen Vaterländischen Krieges",
-        "description": "Es befindet sich in Minsk und ist das erste Museum des Zweiten Weltkriegs, das im Verlauf des Krieges eröffnet wurde. Es wurde nach der Befreiung des Minsk von den Nazi-Invasoren eröffnet. Es gibt 24 Ausstellungshallen und die Hauptausstellungshallen Ausstellungen sind \"Die Schlachten in westlicher Richtung\", \"Minsker Anti-Nazi-Untergrundbewegung\", \"Deutsche Nazi-Besetzung in Belarus\", \"Wendepunkt des Großen Vaterländischen Krieges\" und so weiter. Die Museumspersonalen führen verschiedene Exkursionen und Vorträge durch den großen Helden an ihren Jubiläumsdaten gewidmet."
+        "name": "Schiefer Turm von Pisa",
+        "description": "Der Schiefe Turm von Pisa (La Torre Pendente) ist nur eine von vielen Attraktionen in der Stadt Pisa, deren Weltruhm nicht von der beachtlichen Eleganz von Pisa herrührt Die Konstruktion des Turms begann im 11. Jahrhundert, und der Untergang, der zur Neigung führte, begann, als der Turm das dritte Stockwerk erreichte. Er lehnte sich im Laufe der Jahrhunderte immer mehr an, bevor die Restaurierungsarbeiten in In den 1990er Jahren wurde vorausgesagt, dass es bis zum Jahr 2000 umkippen wird. Heute können Besucher die Treppen des Turms hinaufsteigen, um einen herrlichen Blick über die Stadt zu erhalten."
       },
       {
-        "name": "Belovezhskaya Pushcha National Park",
-        "description": "Der Nationalpark Belovezhskaya Pushcha umfasst sowohl Weißrussland als auch das benachbarte Polen und ist ein geschütztes Gebiet sowie ein UNESCO-Weltkulturerbe. Der Park ist berühmt für seine üppigen Landschaften und Flora und Fauna, von denen die bemerkenswerteste ist ist der Europäische Bison und einer der wenigen Orte auf der Welt, an denen diese majestätischen Tiere in ihrem natürlichen Lebensraum beobachtet werden können. Neben Bisons gibt es auch Halbwildpferde, die als Konik, Wildschwein und Eurasischer Elch bekannt sind im Park. Wenn Sie in den Wintermonaten hierher kommen sollten, gibt es im Park ein Ferienmuseum, das die belarussische Version des Weihnachtsmanns zeigt und bei jüngeren Besuchern ein Hit sein wird."
+        "name": "Comer See",
+        "description": "Der Comer See ist eines der landschaftlich schönsten Gebiete Italiens, umgeben von Bergen und gesäumt von kleinen malerischen Städten. Der See ist seit der Römerzeit ein Treffpunkt der Reichen und verfügt über viele opulente Villen Villa Balbianello und Villa Carlotta sind die bekanntesten, die beide von öffentlich zugänglichen Gärten umgeben sind. Das milde Klima, das das Seeufer ideal für Gärten macht, ist auch ein Anziehungspunkt für Touristen mit ähnlichen Eigenschaften das des Mittelmeers. Neben den Ferienorten rund um den See gibt es eine Abtei aus dem 11. Jahrhundert."
       }
     ],
     "coordinates": ""
