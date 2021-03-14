@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Context from '../context';
+import { Context, ContextID } from '../context';
 import Header from '../header';
 import Footer from '../footer';
 import Main from '../../pages/main';
@@ -16,12 +16,16 @@ const App = () => {
     return () => window.removeEventListener('unload', saveLang);
   });
 
+  const id = 5;
+
   return (
     <Context.Provider value={[lang, setLang]}>
       <div className="app">
         <Header isMain="true" updateFilter={setFilterVal} />
-        {/* <Main filterVal={filterVal} /> */}
-        <Country id="0" />
+        <Main filterVal={filterVal} />
+        <ContextID.Provider value={id}>
+          <Country value='5'/>
+        </ContextID.Provider>
         <Footer />
       </div>
     </Context.Provider>

@@ -1,8 +1,6 @@
 import ItemCard from '../../components/item-card';
 import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
 
-
-
 const Main = ({filterVal}) => {
   const trimmedFilter = filterVal.trim().toLowerCase();
   const filterIsEmpty = trimmedFilter === '';
@@ -10,7 +8,10 @@ const Main = ({filterVal}) => {
   const filteredAttractions = filterIsEmpty ? ATTRACTIONS : 
     ATTRACTIONS.filter(({ title, capital }) => title.toLowerCase().includes(trimmedFilter) || capital.toLowerCase().includes(trimmedFilter));
 
-  const CountriesCards = () => filteredAttractions.map(({id}) => <ItemCard key={`mainCard-${id}`} id={id} />);
+  const CountriesCards = () =>
+  filteredAttractions.map(({ id }) => (
+    <ItemCard key={`mainCard-${id}`} id={id} />
+  ));
 
   return (
     <div className="item-card-wrapper">
