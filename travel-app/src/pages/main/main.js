@@ -1,5 +1,5 @@
 import ItemCard from '../../components/item-card';
-import ATTRACTIONS from '../../data/ATTRACTIONS.json';
+import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
 
 
 

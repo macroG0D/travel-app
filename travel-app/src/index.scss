@@ -1,5 +1,5 @@
 @import '../node_modules/normalize-scss/sass/normalize/import-now';
-
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 @import './styles/vars.scss';
 @import './styles/mixins.scss';
 
@@ -11,6 +11,7 @@
 @import './components/item-card/item-card.scss';
 @import './components/exchange-rates/exchange-rates.scss';
 @import './components/weather/weather.scss';
+@import './components/gallery/gallery.scss';
 @import './components/date-block/date-block.scss';
 @import './components/map/map.scss';
 

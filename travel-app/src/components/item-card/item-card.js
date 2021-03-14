@@ -1,8 +1,17 @@
-import React from 'react';
-import ATTRACTIONS from '../../data/ATTRACTIONS.json';
+import React, { useContext } from 'react';
+import Context from '../context';
+import { ATTRACTIONSEN, ATTRACTIONSRU, ATTRACTIONSDE } from '../../data';
 
 const ItemCard = ({ id }) => {
-  const { title, capital } = ATTRACTIONS[id];
+  const [lang] = useContext(Context);
+  const data =
+    lang === 'en'
+      ? ATTRACTIONSEN
+      : lang === 'ru'
+      ? ATTRACTIONSRU
+      : ATTRACTIONSDE;
+  const { title, capital } = data[id];
+
   const itemCardImage = {
     background: `url('/images/${id}/main.jpg')`,
     backgroundSize: 'cover',

@@ -4,7 +4,7 @@ import DateBlock from '../../components/date-block';
 import ExchangeRates from '../../components/exchange-rates';
 import Weather from '../../components/weather';
 import Map from '../../components/map';
-import ATTRACTIONS from '../../data/ATTRACTIONS.json';
+import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
 
 const getCountryData = (id) => {
   return ATTRACTIONS[id];
