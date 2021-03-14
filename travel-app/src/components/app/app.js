@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
+import {BrowserRouter} from 'react-router-dom';
 import Context from '../context';
+import Switcher from '../navigation';
 import Header from '../header';
 import Footer from '../footer';
 import Main from '../../pages/main';
@@ -18,12 +20,14 @@ const App = () => {
 
   return (
     <Context.Provider value={[lang, setLang]}>
-      <div className="app">
-        <Header isMain="true" updateFilter={setFilterVal} />
-        {/* <Main filterVal={filterVal} /> */}
-        <Country id="0" />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div className="app">
+          <Header isMain="true" updateFilter={setFilterVal}/>
+          <Main filterVal={filterVal}/>
+          <Footer/>
+          <Switcher/>
+        </div>
+      </BrowserRouter>
     </Context.Provider>
   );
 };

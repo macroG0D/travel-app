@@ -88,8 +88,7 @@ const InnerMap = ({ id }) => {
   );
 };
 
-const Country = (props) => {
-  const { id } = props;
+const Country = ({id}) => {
   return (
     <div>
       <InnerMain id={id} />
