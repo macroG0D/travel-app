@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import ATTRACTIONS from "../../data/ATTRACTIONSEN.json";
-// import Context from "../context";
+import { Context } from "../context";
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -39,11 +39,8 @@ const getLocalTime = (date, id) => {
 
 const DateBlock = ({ id }) => {
 
-  // раскомментировать, когда будет добавлен Context
-	// const [lang] = useContext(Context);
+	const [lang] = useContext(Context);
 
-	const lang = 'en'; // удалить, когда будет добавлен Context
-  
   const [date, setDate] = useState(getLocalDate(new Date(), id, lang));
   const [time, setTime] = useState(getLocalTime(new Date(), id));
 
@@ -52,7 +49,7 @@ const DateBlock = ({ id }) => {
       setDate(getLocalDate(new Date(), id, lang));
       setTime(getLocalTime(new Date(), id));
     }, 1000);
-  }, [date, time, id]);
+  }, [lang, id]);
 
   return (
     <div className="date-block">
