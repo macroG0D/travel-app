@@ -1,12 +1,21 @@
+import React, {useContext} from 'react';
+import { Context } from '../../components/context';
 import ItemCard from '../../components/item-card';
-import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
+import { ATTRACTIONSEN, ATTRACTIONSRU, ATTRACTIONSDE } from '../../data';
 
 const Main = ({filterVal}) => {
+  const [lang] = useContext(Context);
+  const data =
+    lang === 'en'
+      ? ATTRACTIONSEN
+      : lang === 'ru'
+      ? ATTRACTIONSRU
+      : ATTRACTIONSDE;
   const trimmedFilter = filterVal.trim().toLowerCase();
   const filterIsEmpty = trimmedFilter === '';
 
-  const filteredAttractions = filterIsEmpty ? ATTRACTIONS : 
-    ATTRACTIONS.filter(({ title, capital }) => title.toLowerCase().includes(trimmedFilter) || capital.toLowerCase().includes(trimmedFilter));
+  const filteredAttractions = filterIsEmpty ? data : 
+    data.filter(({ title, capital }) => title.toLowerCase().includes(trimmedFilter) || capital.toLowerCase().includes(trimmedFilter));
 
   const CountriesCards = () =>
   filteredAttractions.map(({ id }) => (
