@@ -62,7 +62,7 @@ const Lang = () => {
 	const changeLang = (choseLang) => setLang(choseLang);
 
 	const Option = ({ln}) => {
-		const srcImg = `images/${ln}.svg`;
+		const srcImg = `images/${ln}.png`;
 		return (
 			<option value={ln} data-thumbnail={srcImg} >{ln}</option >
 		)

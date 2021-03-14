@@ -19,17 +19,11 @@
   .image-gallery-slide-wrapper {
     position: relative;
     width: calc(100% - 250px);
-    //height: 567px;
     overflow: hidden;
-
-    @media(max-width: 1200px) {
-     // height: 435px;
-    }
 
     @media(max-width: 1000px) {
       width: 100%;
       padding: 0 20px;
-      //height: 357px;
     }
 
     @media(max-width: 640px) {
