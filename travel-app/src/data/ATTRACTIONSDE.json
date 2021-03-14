@@ -34,7 +34,8 @@
         "description": "Der Kakadu-Nationalpark am oberen Ende oder im Northern Territory ist ein Weltkulturerbe und eines der größten Wildnisgebiete der Welt. Mit einer Fläche von mehr als 19.840 Quadratkilometern ist Kakadu der größte Nationalpark in Australien und der zweite Innerhalb seiner Grenzen liegen Monsunregenwälder, Mangrovensümpfe, Flüsse, Schluchten, alte Felsmalereien, Feuchtgebiete und Wasserfälle sowie eine erstaunliche Vielfalt an Wildtieren."
       }
     ],
-    "coordinates": ""
+    "coordinates": [-35.28346, 149.12807],
+    "timeZone": "Australia/Canberra"
   },
   {
     "id": 1,
@@ -71,7 +72,8 @@
         "description": "PDie Provence ist eine wunderschöne Landschaft aus Olivenhainen, sonnenverwöhnten Hügeln und tiefvioletten Lavendelfeldern mit kleinen Dörfern in den Tälern, die auf Felsvorsprüngen liegen Die Landschaft hat viele berühmte Künstler verzaubert, darunter Cézanne, Matisse, Chagall und Picasso. Die rustikale Naturschönheit und der ländliche Charme der Provence versetzen die Besucher in einen Ort, an dem Lebenskunst eine Lebensweise ist."
       }
     ],
-    "coordinates": ""
+    "coordinates": [48.85341, 2.3488],
+    "timeZone": "Europe/Paris"
   },
   {
     "id": 2,
@@ -108,7 +110,8 @@
         "description": "Die Plaza Mayor, der pulsierende Herzschlag der pulsierenden spanischen Hauptstadt, hat seit dem 16. Jahrhundert, als Philipp II. ihm die Aufgabe anvertraute, sie zu entwerfen, eine wichtige Rolle im Leben Madrids gespielt Lieblingsarchitekt Juan de Herrera, Erbauer des Escorial. Es diente als Bühne für zeremonielle Ereignisse - die Verkündigung eines neuen Königs, die Heiligsprechung von Heiligen, das Verbrennen von Ketzern - und öffentliche Unterhaltung wie Ritterturniere und Stierkämpfe."
       }
     ],
-    "coordinates": ""
+    "coordinates": [40.4165, -3.70256],
+    "timeZone": "Europe/Madrid"
   },
   {
     "id": 3,
@@ -145,7 +148,8 @@
         "description": "Ungefähr 20 Kilometer südöstlich von Manaus treffen die dunklen Gewässer des Rio Negro auf das leichte schlammige Wasser des Rio Solimões, das etwa sechs Kilometer nebeneinander fließt, bevor es sich als Amazonas mischt. Bootsfahrten von Manaus bringen Sie zu diesem Punkt , genannt Encontro das Aguas, Treffen der Gewässer."
       }
     ],
-    "coordinates": ""
+    "coordinates": [-15.77972, -47.92972],
+    "timeZone": "America/Fortaleza"
   },
   {
     "id": 4,
@@ -182,7 +186,8 @@
         "description": "\" Der Berg ist ein Buddha und der Buddha ist ein Berg. \"So lautet das berühmte chinesische Sprichwort, das dem spektakulären 71 Meter hohen Leshan-Riesenbuddha zugeschrieben wird. Und es macht auf jeden Fall Sinn für Sie Stellen Sie sich zu seinen Füßen, während die kolossale Statue hoch über Ihnen thront. Diese wichtige religiöse Ikone wurde 713 n. Chr. von einem buddhistischen Mönch gegründet und 90 Jahre später fertiggestellt. Sie wurde vollständig aus einer steinernen Klippe geschnitzt und ist die größte Buddha-Skulptur der Welt."
       }
     ],
-    "coordinates": ""
+    "coordinates": [39.9075, 116.39723],
+    "timeZone": "Asia/Shanghai"
   },
   {
     "id": 5,
@@ -220,7 +225,8 @@
         "description": "Mérida, die Hauptstadt von Yucatán, ist eine der schönsten alten Kolonialstädte Mexikos und eignet sich perfekt als Ausgangspunkt, um die vielen schönen Maya-Stätten der Region zu erkunden, darunter Chichén Itzá und Tulum. Es ist ein ebenso beliebter Tag Mérida wurde 1542 von den Spaniern gegründet und ist nach einem Gittermuster angelegt, das es einfach macht, die zahlreichen attraktiven Parks und schönen alten Gebäude zu erkunden."
       }
     ],
-    "coordinates": ""
+    "coordinates": [19.4263466279, -99.1266128269],
+    "timeZone": "America/Mexico_City"
   },
   {
     "id": 6,
@@ -257,7 +263,8 @@
         "description": "Der Comer See ist eines der landschaftlich schönsten Gebiete Italiens, umgeben von Bergen und gesäumt von kleinen malerischen Städten. Der See ist seit der Römerzeit ein Treffpunkt der Reichen und verfügt über viele opulente Villen Villa Balbianello und Villa Carlotta sind die bekanntesten, die beide von öffentlich zugänglichen Gärten umgeben sind. Das milde Klima, das das Seeufer ideal für Gärten macht, ist auch ein Anziehungspunkt für Touristen mit ähnlichen Eigenschaften das des Mittelmeers. Neben den Ferienorten rund um den See gibt es eine Abtei aus dem 11. Jahrhundert."
       }
     ],
-    "coordinates": ""
+    "coordinates": [53.9, 27.56667],
+    "timeZone": "Europe/Rome"
   },
   {
     "id": 7,
@@ -294,6 +301,7 @@
         "description": "Periyar National Park und Wildlife Sanctuary, eine der beliebtesten Touristenattraktionen Südindiens, liegt um einen See, der 1895 von britischen Ingenieuren zur Bewässerung und Wasserversorgung der Stadt Madurai gebaut wurde. Dieser wunderschöne Park wurde 1934 gegründet beheimatet zahlreiche Säugetierarten, darunter eine große frei lebende indische Elefantenpopulation, Wildschweine, Otter, den Makaken mit Löwenschwanz und mehr als 20 bengalische Tiger. Vogelbeobachtung ist eine beliebte Aktivität mit häufigen Sichtungen von Arten wie Dartern , Störche, Eisvögel, Nashornvögel und Drongos mit Schlägerschwanz sowie viele interessante Schmetterlingssorten."
       }
     ],
-    "coordinates": ""
+    "coordinates": [28.63576, 77.22445],
+    "timeZone": "Asia/Kolkata"
   }
 ]

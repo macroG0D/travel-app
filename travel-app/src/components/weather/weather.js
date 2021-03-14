@@ -26,7 +26,7 @@ const ShowWeather = ({ weatherData }) => {
       <div className="weather-widget__humidity-wrapper">
         <span className="weather-widget__humidity"> {humidity} </span>
         <img
-          className="weather-widget__humidity"
+          className="weather-widget__humidityIcon"
           src={humidityIcon}
           alt="humidity"
         ></img>

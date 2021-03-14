@@ -1,0 +1,66 @@
+.weather-widget {
+  background-color: $color-gray-light;
+  width: 373px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  user-select: none;
+
+  &__temp,
+  &__humidity-wrapper {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 100%;
+  }
+
+  &__temp {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: left;
+  }
+
+  &__humidity-wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  &__humidity {
+    padding-right: 3px;
+    text-align: right;
+  }
+
+  &__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  &__icon {
+    background: $color-accent;
+    width: 47px;
+    height: 47px;
+    border-radius: 100%;
+  }
+
+  &__main {
+    margin: 0;
+  }
+
+  @media (max-width: $md-width-content + 60) {
+    width: 300px;
+  }
+
+  @include mt;
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+}

@@ -14,7 +14,23 @@ a {
 }
 
 .app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   &__title {
     @include bold-font;
   }
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
 }

@@ -45,12 +45,15 @@
   &__img {
     &__rs {
       width: 65px;
-      color: white;
+      color: $color-white
     }
 
     &--git {
       width: 20px;
       padding-right: 5px;
     }
+  }
+  &__copyright {
+    color: $color-white
   }
 }

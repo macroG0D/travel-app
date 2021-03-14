@@ -1,0 +1,33 @@
+.date-block {
+  width: 373px;
+  height: 203px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $color-gray-light;
+  user-select: none;
+  
+  &__time {
+    margin-top: 60px;
+
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  &__date {
+    @include body-text-md;
+  }
+
+  @include mt;
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: $md-width-content + 60) {
+    width: 300px;
+  }
+}
