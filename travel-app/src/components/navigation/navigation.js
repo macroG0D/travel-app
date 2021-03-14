@@ -8,12 +8,12 @@ import Main from '../../pages/main';
 import Country from '../../pages/country';
 import ATTRACTION from '../../data/ATTRACTIONSEN.json';
 
- const Switcher = () => {
+ const Switcher = ({filterVal}) => {
   const isCountryExists = ({history, match}) => {
     const idCountry = Number(match.params.id);
 
     if (
-      idCountry < 1
+      idCountry < 0
       || idCountry >= ATTRACTION.length
       || (idCountry ^ 0) !== idCountry
     ) {
@@ -25,7 +25,7 @@ import ATTRACTION from '../../data/ATTRACTIONSEN.json';
 
   return (
     <Switch>
-      <Route exact path='/' component={Main}/>
+      <Route exact path='/' component={() => <Main filterVal={filterVal}/>}/>
       <Route path='/country/:id' component={(...props) => isCountryExists(...props)}/>
       <Redirect path='*' to='/'/>
     </Switch>

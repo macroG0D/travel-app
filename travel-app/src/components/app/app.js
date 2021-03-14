@@ -4,8 +4,6 @@ import Context from '../context';
 import Switcher from '../navigation';
 import Header from '../header';
 import Footer from '../footer';
-import Main from '../../pages/main';
-import Country from '../../pages/country';
 
 const App = () => {
   const selectedLang = localStorage.getItem('lang') || 'en';
@@ -23,9 +21,8 @@ const App = () => {
       <BrowserRouter>
         <div className="app">
           <Header isMain="true" updateFilter={setFilterVal}/>
-          <Main filterVal={filterVal}/>
+          <Switcher  filterVal={filterVal} />
           <Footer/>
-          <Switcher/>
         </div>
       </BrowserRouter>
     </Context.Provider>
