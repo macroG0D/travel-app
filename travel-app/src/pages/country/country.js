@@ -7,6 +7,7 @@ import Map from '../../components/map';
 import Gallery from '../../components/gallery';
 import { ATTRACTIONSDE, ATTRACTIONSEN, ATTRACTIONSRU } from '../../data';
 import { Context, ContextID } from '../../components/context';
+import localization from '../../data/localization.json';
 
 const getCountryData = (lang, id) => {
   const ATTRACTION =
@@ -51,11 +52,12 @@ const InnerAbout = () => {
 };
 
 const InnerVideo = () => {
+  const [lang] = useContext(Context);
   const id = useContext(ContextID);
-  const { title } = getCountryData('en', id);
+  const { title } = getCountryData(lang, id);
   return (
     <div className="inner-video">
-      <h2>About {title}</h2>
+      <h2>{`${localization[lang].about} ${title}`}</h2>
       <VideoPlayer countryName={title} />
     </div>
   );
@@ -68,7 +70,7 @@ const InnerGallery = () => {
   return (
     <div className="inner-gallery">
       <div className="inner-gallery__content">
-        <h2>Attractions in {title}</h2>
+        <h2>{`${localization[lang].attractions} ${title}`}</h2>
         <Gallery />
       </div>
     </div>
@@ -82,7 +84,7 @@ const InnerWidgets = () => {
   return (
     <div className="inner-widgets">
       <div className="inner-widgets__content">
-        <h2 className="inner-widgets__header">{capital} Info</h2>
+        <h2 className="inner-widgets__header">{lang=== 'ru' ? `${localization[lang].info} ${capital}` : `${capital} ${localization[lang].info}`}</h2>
         <div className="inner-widgets__widgets-wrapper">
           <DateBlock id={id} />
           <ExchangeRates id={id} />
@@ -99,7 +101,7 @@ const InnerMap = () => {
   const { capital } = getCountryData(lang, id);
   return (
     <div className="inner-map">
-      <h2>Location of {capital}</h2>
+      <h2>{`${localization[lang].location} ${capital}`}</h2>
       <Map id={id} />
     </div>
   );

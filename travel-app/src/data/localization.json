@@ -1,0 +1,23 @@
+{
+  "en":{
+    "placeholder": "Search country",
+    "about": "About",
+    "attractions": "Attractions in",
+    "info":"Info",
+    "location":"Location of"
+  },
+  "ru":{
+    "placeholder": "Поиск страны",
+    "about": "О",
+    "attractions": "Достопримечательности в",
+    "info":"Информация о",
+    "location":"Расположение"
+  },
+  "de":{
+    "placeholder": "Land suchen",
+    "about": "Über",
+    "attractions": "Attraktionen in",
+    "info":"Info",
+    "location":"Standort"
+  }
+}
