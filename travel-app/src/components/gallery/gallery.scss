@@ -35,6 +35,9 @@
       &:hover {
         background: $color-gray-light;
       }
+      &:active {
+        background: $color-accent;
+      }
     }
   }
 
@@ -107,7 +110,6 @@
       top:5%;
       right: 3%;
       cursor: pointer;
-      color: white;
       z-index: 1;
     }
   }
