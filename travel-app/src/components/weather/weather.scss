@@ -2,6 +2,7 @@
   @include widgets-common-style;
   justify-content: center;
   position: relative;
+  text-align: center;
   &__temp,
   &__humidity-wrapper {
     font-family: Roboto;
