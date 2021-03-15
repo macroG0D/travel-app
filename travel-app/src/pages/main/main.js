@@ -1,11 +1,12 @@
 import React, {useContext} from 'react';
-import { Context } from '../../components/context';
+import { Context, ContextID } from '../../components/context';
 import ItemCard from '../../components/item-card';
 import { ATTRACTIONSEN, ATTRACTIONSRU, ATTRACTIONSDE } from '../../data';
 import {NavLink} from 'react-router-dom';
 
 const Main = ({filterVal}) => {
   const [lang] = useContext(Context);
+  const [, setId] = useContext(ContextID);
   const data =
     lang === 'en'
       ? ATTRACTIONSEN
@@ -18,12 +19,18 @@ const Main = ({filterVal}) => {
   const filteredAttractions = filterIsEmpty ? data : 
     data.filter(({ title, capital }) => title.toLowerCase().includes(trimmedFilter) || capital.toLowerCase().includes(trimmedFilter));
 
+//  const setIdCountry = (id) => setId(id);
+
   const CountriesCards = () => filteredAttractions.map(({id}) => {
     return (
       <NavLink to={`/country/${id}`} key={id}>
         <ItemCard
           key={`mainCard-${id}`}
-          id={id}/>
+          id={id}
+        onClick={(id) => {
+          setId(id);
+          console.log(id)
+        }}/>
       </NavLink>
     )
   });

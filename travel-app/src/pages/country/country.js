@@ -18,9 +18,9 @@ const getCountryData = (lang, id) => {
   return ATTRACTION[id];
 };
 
-const InnerMain = () => {
+const InnerMain = ({id}) => {
   const [lang] = useContext(Context);
-  const [id] = useContext(ContextID);
+  //const [id] = useContext(ContextID);
   const { title, capital } = getCountryData(lang, id);
 
   const mainBgImage = {
@@ -105,16 +105,16 @@ const InnerMap = () => {
   );
 };
 
-const Country = () => {
-
+const Country = ({id}) => {
+console.log(id)
   return (
     <div>
-      <InnerMain />
-      <InnerAbout />
-      <InnerVideo />
-      <InnerGallery />
-      <InnerWidgets />
-      <InnerMap />
+      <InnerMain id={id}/>
+      <InnerAbout id={id} />
+      <InnerVideo  id={id}/>
+      <InnerGallery  id={id}/>
+      <InnerWidgets  id={id}/>
+      <InnerMap  id={id}/>
     </div>
   );
 };
