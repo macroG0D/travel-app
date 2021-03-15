@@ -1,11 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react';
+import Fullscreen from 'fullscreen-react';
 import ImageGallery from 'react-image-gallery/';
 import { Context, ContextID } from '../context';
 import { ATTRACTIONSDE, ATTRACTIONSEN, ATTRACTIONSRU } from '../../data';
 
 const Gallery = () => {
+  const [isEnter, setIsEnter] = useState(false);
   const [lang] = useContext(Context);
-  const id = useContext(ContextID);
+  const [id] = useContext(ContextID);
   const ATTRACTION =
     lang === 'en'
       ? ATTRACTIONSEN
@@ -42,8 +44,25 @@ const Gallery = () => {
     setIdImg(id);
   };
 
+  const setFull = () => {
+    setIsEnter((isEnter) => !isEnter);
+  };
+
+  const FullscreenBtn = ({setFull}) => {
+
+    return (
+
+      <img className='full' src="https://static.thenounproject.com/png/2814-200.png" alt="fullscreen"
+           role="button"
+           onClick={setFull} />
+    )
+  };
+
   return (
+    <Fullscreen isEnter={isEnter} onChange={setIsEnter} >
+
     <div className="gallery">
+
       <div className="gallery__content">
         <span className="gallery__title">{name}</span>
         <ImageGallery
@@ -53,10 +72,16 @@ const Gallery = () => {
           showBullets={true}
           onSlide={setDescription}
           startIndex={idImg}
+          showFullscreenButton={false}
         />
+        <FullscreenBtn
+          setFull={setFull} />
         <div className="gallery__description">{description}</div>
       </div>
+
     </div>
+    </Fullscreen >
+
   );
 };
 

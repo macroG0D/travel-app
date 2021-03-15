@@ -31,21 +31,6 @@
       padding: 0;
     }
 
-    .image-gallery-left-nav {
-      position: absolute;
-      left: 0;
-    }
-
-    .image-gallery-right-nav {
-      position: absolute;
-      right: 0;
-    }
-
-    .image-gallery-fullscreen-button {
-      position: absolute;
-      right: 0;
-    }
-
     .image-gallery-bullets .image-gallery-bullet {
       &:hover {
         background: $color-gray-light;
@@ -76,10 +61,14 @@
   }
 }
 
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:hover, .image-gallery-thumbnail:focus {
+  border: 4px solid $color-accent;
+}
+
 .image-gallery-slide {
   .image-gallery-image {
     min-height: 567px;
-    object-fit: cover;
+   // object-fit: cover;
 
     @media(max-width: 1200px) {
       min-height: 435px;
@@ -88,6 +77,8 @@
     @media(max-width: 1000px) {
       min-height: 357px;
     }
+
+
   }
 }
 
@@ -96,9 +87,9 @@
 
   &__content {
     max-width: $xl-width-content;
-    padding: 100px 0 120px 0;
-
+    padding: 30px 0 120px 0;
     margin: 0 auto;
+    position: relative;
 
     @media (max-width: 1200px) {
       max-width: $lg-width-content;
@@ -110,6 +101,15 @@
 
     @media (max-width: 640px) {
       max-width: $sm-width-content;
+    }
+
+    .full {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top:20%;
+      right: 20%;
+      z-index: 1;
     }
   }
 
@@ -127,7 +127,7 @@
     text-align: center;
     max-width: 700px;
     padding-top: 20px;
-    position: relative;
+    position: absolute;
     left: calc(40% - 350px);
 
     @media (max-width: 1200px) {

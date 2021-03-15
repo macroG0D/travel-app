@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { Context } from '../context';
-import { langs } from '../../data/CONSTANTS';
+import { langs } from '../../data';
 
 const Lang = () => {
   const [lang, setLang] = useContext(Context);
@@ -66,7 +66,7 @@ const Lang = () => {
   const changeLang = (choseLang) => setLang(choseLang);
 
   const Option = ({ ln }) => {
-    const srcImg = `images/${ln}.png`;
+    const srcImg = `/images/${ln}.png`;
     return (
       <option value={ln} data-thumbnail={srcImg}>
         {ln}

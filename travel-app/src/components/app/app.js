@@ -16,13 +16,13 @@ const App = () => {
     return () => window.removeEventListener('unload', saveLang);
   });
 
-  const id = 5;
+  const [id, setId] = useState(0);
   return (
     <Context.Provider value={[lang, setLang]}>
       <BrowserRouter>
         <div className="app">
           <Header updateFilter={setFilterVal}/>
-          <ContextID.Provider value={id}>
+          <ContextID.Provider value={[id, setId]}>
           <Switcher  filterVal={filterVal}/>
           </ContextID.Provider>
           <Footer/>
