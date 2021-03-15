@@ -15,7 +15,6 @@ import {ContextID} from "../context";
    const isCountryExists = ({history, match}) => {
     const idCountry = Number(match.params.id);
     setId(idCountry);
-console.log(idCountry)
     if (
       idCountry < 0
       || idCountry >= ATTRACTION.length
