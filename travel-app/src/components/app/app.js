@@ -9,7 +9,6 @@ const App = () => {
   const selectedLang = localStorage.getItem('lang') || 'en';
   const [lang, setLang] = useState(selectedLang);
   const [filterVal, setFilterVal] = useState('');
-  const [id, setId] = useState(0);
   const saveLang = () => localStorage.setItem('lang', lang);
 
   useEffect(() => {
