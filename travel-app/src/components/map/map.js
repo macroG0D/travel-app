@@ -1,78 +1,68 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, GeoJSON, ScaleControl } from 'react-leaflet';
-import * as L from 'leaflet';
-import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
-import geoJSON from '../../data/geoJSON.json';
+import { MapContainer, TileLayer, Marker, GeoJSON, ScaleControl } from 'react-leaflet';
+
 import { Context } from "../context";
+import ATTRACTIONS from '../../data/ATTRACTIONSEN.json';
+import { customIcon, mapBounds, highlightStyle, accessToken, attribution } from './customSettings';
+import transformGeoJSON from './transformGeoJSON';
 
-const transformGeoJSON = (title) =>  {
-  const features = geoJSON.features.filter((({ properties }) => properties.name === title));
-  const countryGeoJSON = { ...geoJSON, features };
-
-  return countryGeoJSON;
-}
+const DEFAULT_X = 0;
+const EMPTY_STR = '';
 
 const Map = ({ id }) => {
-  const { title, coordinates, capital } = ATTRACTIONS[id];
+  const { title, coordinates } = ATTRACTIONS[id];
+  const countryGeoJSON = transformGeoJSON(title);
 
-  const accessToken = "JJE7vIIHikRr4Qb1vMCPzKerdDpK3klatPXnDECt8Z81j3FCiSkT2VcK5qer5zv4";
-  const attribution = '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a>';
-  
-  const countryData = transformGeoJSON(title);
-  
-  const pathOptions = {
-    fillColor: '#800026',
-    weight: 1,
-    opacity: 1,
-    color: 'white',
-    dashArray: '3',
-    fillOpacity: 0.5,
-    fill: true
-  }
-  
 	const [lang] = useContext(Context);
-  const startUrl = `https://tile.jawg.io/jawg-streets/{z}/{x}/{y}.png?lang=${lang}&access-token=${accessToken}`;
-  
   const [tile, setTile] = useState();
-  const [map, setMap] = useState();
+  const [fullscreen, setFullscreen] = useState(null);
+  const [map, setMap] = useState(null);
 
   useEffect(() => {
     if (tile) {
-      tile.setUrl(`https://tile.jawg.io/jawg-streets/{z}/{x}/{y}.png?lang=${lang}&access-token=${accessToken}`);
+      const url = `https://tile.jawg.io/jawg-streets/{z}/{x}/{y}.png?lang=${lang}&access-token=${accessToken}`;
+      tile.setUrl(url);
     }
   }, [lang, tile]);
 
   useEffect(() => {
-    const { coordinates } = ATTRACTIONS[id]; 
+    if (map && fullscreen !== null) {
+      map.invalidateSize();
 
-    if (map) {
-      map.setView(coordinates);
+      const downPosition = document.body.clientHeight;
+      window.scrollTo(DEFAULT_X, downPosition);
+      document.body.style.overflow = fullscreen ? 'hidden' : 'visible';
     }
-  }, [id, map]);
+  }, [fullscreen, map])
 
-  const leftCorner = L.latLng(-90, -180);
-  const rightCorner = L.latLng(90, 180);
-  const bounds = L.latLngBounds(leftCorner, rightCorner)
-  
+  useEffect(() => () => {
+    document.body.style.overflow = 'visible';
+  }, []);
+
+  const onFullscreen = () => {
+    setFullscreen(() => !fullscreen);
+  }
+
+  const clazz = fullscreen ? 'map--fullscreen' : EMPTY_STR;
+
   return (
-    <div className="map" id="map">
-      <MapContainer center={coordinates} zoom={4} minZoom={3} scrollWheelZoom={true} maxBounds={bounds} whenCreated={setMap}>
+    <div className={`map ${clazz}`} id="map">
+      <button className="map__fullscreen-button" type="button" onClick={onFullscreen}>
+        <img src="/images/fullscreen.svg" alt="full-screen"/>
+      </button>
+      <MapContainer center={coordinates} zoom={4} minZoom={3} scrollWheelZoom={true} maxBoundsViscosity={1} maxBounds={mapBounds} whenCreated={setMap}>
 
         <TileLayer
           ref={setTile}
           attribution={attribution}
-          url={startUrl}
+          url={EMPTY_STR}
         />
 
-        <GeoJSON data={countryData} pathOptions={pathOptions}/>
+        <GeoJSON data={countryGeoJSON} pathOptions={highlightStyle}/>
 
         <ScaleControl/>
 
-        <Marker position={coordinates}>
-          <Popup>
-            {capital}
-          </Popup>
-        </Marker>
+        <Marker position={coordinates} icon={customIcon}></Marker>
 
       </MapContainer>
     </div>
