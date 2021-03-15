@@ -21,7 +21,7 @@ const Gallery = () => {
 
   const infoGallery = data[id]['info-gallery'];
   const { name, description } = infoGallery[idImg];
-  const images = infoGallery.map(({ name, description }, ind) => {
+  const images = infoGallery.map(({ name }, ind) => {
     return {
       thumbnail: `${srcImage}/${ind}.jpg`,
       original: `${srcImage}/${ind}.jpg`,
@@ -49,9 +49,7 @@ const Gallery = () => {
   };
 
   const FullscreenBtn = ({setFull}) => {
-
     return (
-
       <img className='full' src="https://static.thenounproject.com/png/2814-200.png" alt="fullscreen"
            role="button"
            onClick={setFull} />
