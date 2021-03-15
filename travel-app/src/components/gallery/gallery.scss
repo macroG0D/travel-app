@@ -68,7 +68,6 @@
 .image-gallery-slide {
   .image-gallery-image {
     min-height: 567px;
-   // object-fit: cover;
 
     @media(max-width: 1200px) {
       min-height: 435px;
@@ -77,8 +76,6 @@
     @media(max-width: 1000px) {
       min-height: 357px;
     }
-
-
   }
 }
 
@@ -104,12 +101,13 @@
     }
 
     .full {
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
       position: absolute;
-      top:20%;
-      right: 20%;
+      top:5%;
+      right: 3%;
       cursor: pointer;
+      color: white;
       z-index: 1;
     }
   }

@@ -49,8 +49,9 @@ const Gallery = () => {
   };
 
   const FullscreenBtn = ({setFull}) => {
+    const img = isEnter? 'exit-full' : 'full';
     return (
-      <img className='full' src="https://static.thenounproject.com/png/2814-200.png" alt="fullscreen"
+      <img className='full' src={`/images/${img}.png`} alt="fullscreen"
            role="button"
            onClick={setFull} />
     )
