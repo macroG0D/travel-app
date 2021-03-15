@@ -57,6 +57,9 @@
     @include content-container;
     padding: 0;
     flex-direction: column;
+    h2 {
+      text-align: center;
+    }
   }
   &__gallery-wrapper {
     width: 100%;

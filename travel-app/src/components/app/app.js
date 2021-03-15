@@ -9,6 +9,7 @@ const App = () => {
   const selectedLang = localStorage.getItem('lang') || 'en';
   const [lang, setLang] = useState(selectedLang);
   const [filterVal, setFilterVal] = useState('');
+  const [id, setId] = useState(0);
   const saveLang = () => localStorage.setItem('lang', lang);
 
   useEffect(() => {
@@ -16,13 +17,12 @@ const App = () => {
     return () => window.removeEventListener('unload', saveLang);
   });
 
-  const id = 5;
   return (
     <Context.Provider value={[lang, setLang]}>
       <BrowserRouter>
         <div className="app">
           <Header updateFilter={setFilterVal}/>
-          <ContextID.Provider value={id}>
+          <ContextID.Provider value={[id, setId]}>
           <Switcher  filterVal={filterVal}/>
           </ContextID.Provider>
           <Footer/>
