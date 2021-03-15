@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {BrowserRouter} from 'react-router-dom';
 import Switcher from '../switcher';
-import { Context, ContextID } from '../context';
+import { Context } from '../context';
 import Header from '../header';
 import Footer from '../footer';
 
@@ -22,9 +22,7 @@ const App = () => {
       <BrowserRouter>
         <div className="app">
           <Header updateFilter={setFilterVal}/>
-          <ContextID.Provider value={[id, setId]}>
           <Switcher  filterVal={filterVal}/>
-          </ContextID.Provider>
           <Footer/>
         </div>
       </BrowserRouter>

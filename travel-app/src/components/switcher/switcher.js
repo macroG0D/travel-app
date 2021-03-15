@@ -7,14 +7,11 @@ import {
 import Main from '../../pages/main';
 import Country from '../../pages/country';
 import ATTRACTION from '../../data/ATTRACTIONSEN.json';
-import {ContextID} from "../context";
 
  const Switcher = ({filterVal}) => {
-   const [, setId] = useContext(ContextID);
-
    const isCountryExists = ({history, match}) => {
     const idCountry = Number(match.params.id);
-    setId(idCountry);
+
     if (
       idCountry < 0
       || idCountry >= ATTRACTION.length
