@@ -57,7 +57,7 @@ const InnerVideo = () => {
   const { title } = getCountryData(lang, id);
   return (
     <div className="inner-video">
-      <h2>{`${localization[lang].about} ${title}`}</h2>
+      <h2>{`${localization[lang].about}, ${title}`}</h2>
       <VideoPlayer countryName={title} />
     </div>
   );
@@ -70,7 +70,7 @@ const InnerGallery = () => {
   return (
     <div className="inner-gallery">
       <div className="inner-gallery__content">
-        <h2>{`${localization[lang].attractions} ${title}`}</h2>
+        <h2>{`${localization[lang].attractions}, ${title}`}</h2>
         <Gallery />
       </div>
     </div>
@@ -84,7 +84,7 @@ const InnerWidgets = () => {
   return (
     <div className="inner-widgets">
       <div className="inner-widgets__content">
-        <h2 className="inner-widgets__header">{lang=== 'ru' ? `${localization[lang].info} ${capital}` : `${capital} ${localization[lang].info}`}</h2>
+        <h2 className="inner-widgets__header">{`${localization[lang].info}, ${capital}`}</h2>
         <div className="inner-widgets__widgets-wrapper">
           <DateBlock id={id} />
           <ExchangeRates id={id} />
@@ -101,7 +101,7 @@ const InnerMap = () => {
   const { capital } = getCountryData(lang, id);
   return (
     <div className="inner-map">
-      <h2>{`${localization[lang].location} ${capital}`}</h2>
+      <h2>{`${localization[lang].location}, ${capital}`}</h2>
       <Map id={id} />
     </div>
   );

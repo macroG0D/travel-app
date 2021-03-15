@@ -1,22 +1,22 @@
 {
   "en":{
     "placeholder": "Search country",
-    "about": "About",
-    "attractions": "Attractions in",
+    "about": "Video",
+    "attractions": "Attractions",
     "info":"Info",
-    "location":"Location of"
+    "location":"Location"
   },
   "ru":{
     "placeholder": "Поиск страны",
-    "about": "О",
-    "attractions": "Достопримечательности в",
-    "info":"Информация о",
+    "about": "Видео",
+    "attractions": "Достопримечательности",
+    "info":"Информация",
     "location":"Расположение"
   },
   "de":{
     "placeholder": "Land suchen",
-    "about": "Über",
-    "attractions": "Attraktionen in",
+    "about": "Video",
+    "attractions": "Attraktionen",
     "info":"Info",
     "location":"Standort"
   }
