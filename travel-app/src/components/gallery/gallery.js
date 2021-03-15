@@ -1,11 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react';
+import Fullscreen from 'fullscreen-react';
 import ImageGallery from 'react-image-gallery/';
 import { Context, ContextID } from '../context';
 import { ATTRACTIONSDE, ATTRACTIONSEN, ATTRACTIONSRU } from '../../data';
 
 const Gallery = () => {
+  const [isEnter, setIsEnter] = useState(false);
   const [lang] = useContext(Context);
-  const id = useContext(ContextID);
+  const [id] = useContext(ContextID);
   const ATTRACTION =
     lang === 'en'
       ? ATTRACTIONSEN
@@ -19,7 +21,7 @@ const Gallery = () => {
 
   const infoGallery = data[id]['info-gallery'];
   const { name, description } = infoGallery[idImg];
-  const images = infoGallery.map(({ name, description }, ind) => {
+  const images = infoGallery.map(({ name }, ind) => {
     return {
       thumbnail: `${srcImage}/${ind}.jpg`,
       original: `${srcImage}/${ind}.jpg`,
@@ -42,8 +44,24 @@ const Gallery = () => {
     setIdImg(id);
   };
 
+  const setFull = () => {
+    setIsEnter((isEnter) => !isEnter);
+  };
+
+  const FullscreenBtn = ({setFull}) => {
+    const img = isEnter? 'exit-full' : 'full';
+    return (
+      <img className='full' src={`/images/${img}.png`} alt="fullscreen"
+           role="button"
+           onClick={setFull} />
+    )
+  };
+
   return (
+    <Fullscreen isEnter={isEnter} onChange={setIsEnter} >
+
     <div className="gallery">
+
       <div className="gallery__content">
         <span className="gallery__title">{name}</span>
         <ImageGallery
@@ -53,10 +71,16 @@ const Gallery = () => {
           showBullets={true}
           onSlide={setDescription}
           startIndex={idImg}
+          showFullscreenButton={false}
         />
+        <FullscreenBtn
+          setFull={setFull} />
         <div className="gallery__description">{description}</div>
       </div>
+
     </div>
+    </Fullscreen >
+
   );
 };
 
