@@ -10,12 +10,11 @@ import ATTRACTION from '../../data/ATTRACTIONSEN.json';
 import {ContextID} from "../context";
 
  const Switcher = ({filterVal}) => {
-   const [id] = useContext(ContextID);
+   const [, setId] = useContext(ContextID);
 
    const isCountryExists = ({history, match}) => {
     const idCountry = Number(match.params.id);
-    console.log(idCountry)
-    // setId(idCountry);
+    setId(idCountry);
     if (
       idCountry < 0
       || idCountry >= ATTRACTION.length
