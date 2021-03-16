@@ -1,3 +1,3 @@
-import { Context, ContextID } from './context';
+import { Context } from './context';
 
-export { Context, ContextID };
+export { Context };

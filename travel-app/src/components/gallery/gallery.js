@@ -1,13 +1,12 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fullscreen from 'fullscreen-react';
 import ImageGallery from 'react-image-gallery/';
-import { Context, ContextID } from '../context';
+import { Context } from '../context';
 import { ATTRACTIONSDE, ATTRACTIONSEN, ATTRACTIONSRU } from '../../data';
 
-const Gallery = () => {
+const Gallery = ({id}) => {
   const [isEnter, setIsEnter] = useState(false);
   const [lang] = useContext(Context);
-  const [id] = useContext(ContextID);
   const ATTRACTION =
     lang === 'en'
       ? ATTRACTIONSEN
