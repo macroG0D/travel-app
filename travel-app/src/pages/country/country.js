@@ -20,7 +20,7 @@ const getCountryData = (lang, id) => {
   return ATTRACTION[id];
 };
 
-const InnerMain = ({id}) => {
+const InnerMain = ({ id }) => {
   const [lang] = useContext(Context);
   const { title, capital } = getCountryData(lang, id);
 
@@ -40,7 +40,7 @@ const InnerMain = ({id}) => {
   );
 };
 
-const InnerAbout = ({id}) => {
+const InnerAbout = ({ id }) => {
   const [lang] = useContext(Context);
   const { info } = getCountryData(lang, id);
   return (
@@ -50,20 +50,19 @@ const InnerAbout = ({id}) => {
   );
 };
 
-const InnerVideo = ({id})  => {
+const InnerVideo = ({ id }) => {
   const [lang] = useContext(Context);
   const { title } = getCountryData(lang, id);
   const titleForUrl = getCountryData('en', id);
   return (
     <div className="inner-video">
       <h2>{`${localization[lang].about}, ${title}`}</h2>
-      
       <VideoPlayer countryName={titleForUrl.title} />
     </div>
   );
 };
 
-const InnerGallery = ({id}) => {
+const InnerGallery = ({ id }) => {
   const [lang] = useContext(Context);
   const { title } = getCountryData(lang, id);
   return (
@@ -76,7 +75,7 @@ const InnerGallery = ({id}) => {
   );
 };
 
-const InnerWidgets = ({id}) => {
+const InnerWidgets = ({ id }) => {
   const [lang] = useContext(Context);
   const { capital } = getCountryData(lang, id);
   return (
@@ -93,7 +92,7 @@ const InnerWidgets = ({id}) => {
   );
 };
 
-const InnerMap = ({id}) => {
+const InnerMap = ({ id }) => {
   const [lang] = useContext(Context);
   const { capital } = getCountryData(lang, id);
   return (
@@ -104,7 +103,7 @@ const InnerMap = ({id}) => {
   );
 };
 
-const Country = ({id}) => {
+const Country = ({ id }) => {
   return (
     <div>
       <InnerMain id={id} />
