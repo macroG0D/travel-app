@@ -1,0 +1,23 @@
+{
+  "en":{
+    "placeholder": "Search country",
+    "about": "Video",
+    "attractions": "Attractions",
+    "info":"Info",
+    "location":"Location"
+  },
+  "ru":{
+    "placeholder": "Поиск страны",
+    "about": "Видео",
+    "attractions": "Достопримечательности",
+    "info":"Информация",
+    "location":"Расположение"
+  },
+  "de":{
+    "placeholder": "Land suchen",
+    "about": "Video",
+    "attractions": "Attraktionen",
+    "info":"Info",
+    "location":"Standort"
+  }
+}

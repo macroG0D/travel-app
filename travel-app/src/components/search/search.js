@@ -1,6 +1,8 @@
-import React, {useState, useRef, useEffect} from 'react';
-
+import React, {useState, useRef, useEffect, useContext} from 'react';
+import localization from '../../data/localization.json';
+import { Context } from '../context';
 const Search = ({updateFilter}) =>{
+  const [lang] = useContext(Context);
   const inputEl = useRef(null);
   const [ searchVal, setSearchVal ] = useState('');
 
@@ -25,7 +27,7 @@ const Search = ({updateFilter}) =>{
         ref={inputEl}
         type="text"
         value={searchVal}
-        placeholder="Search country"
+        placeholder={localization[lang].placeholder}
         onChange = {(e) => setSearchVal(e.target.value)}
         onKeyPress = {handleEnterClick}
         autoComplete="off"/>
