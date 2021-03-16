@@ -54,7 +54,6 @@
   @include section-paddings;
   background-color: $color-gray-light;
   &__content {
-    @include content-container;
     padding: 0;
     flex-direction: column;
     h2 {
