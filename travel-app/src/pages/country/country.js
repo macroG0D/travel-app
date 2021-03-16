@@ -7,7 +7,7 @@ import Map from '../../components/map';
 import Gallery from '../../components/gallery';
 import { ATTRACTIONSDE, ATTRACTIONSEN, ATTRACTIONSRU } from '../../data';
 
-import { Context, ContextID } from '../../components/context';
+import { Context } from '../../components/context';
 import localization from '../../data/localization.json';
 
 const getCountryData = (lang, id) => {
@@ -50,14 +50,13 @@ const InnerAbout = ({id}) => {
   );
 };
 
-const InnerVideo = () => {
+const InnerVideo = ({id})  => {
   const [lang] = useContext(Context);
-  const id = useContext(ContextID);
-  const { title } = getCountryData(lang, id);
-
+  const { title } = getCountryData('en', id);
   return (
     <div className="inner-video">
       <h2>{`${localization[lang].about}, ${title}`}</h2>
+      
       <VideoPlayer countryName={title} />
     </div>
   );
@@ -70,7 +69,7 @@ const InnerGallery = ({id}) => {
     <div className="inner-gallery">
       <div className="inner-gallery__content">
         <h2>{`${localization[lang].attractions}, ${title}`}</h2>
-        <Gallery />
+        <Gallery id={id} />
       </div>
     </div>
   );

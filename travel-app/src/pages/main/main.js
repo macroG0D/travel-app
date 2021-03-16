@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { Context, ContextID } from '../../components/context';
+import { Context } from '../../components/context';
 import ItemCard from '../../components/item-card';
 import { ATTRACTIONSEN, ATTRACTIONSRU, ATTRACTIONSDE } from '../../data';
 import {NavLink} from 'react-router-dom';
