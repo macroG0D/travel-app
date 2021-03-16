@@ -52,12 +52,13 @@ const InnerAbout = ({id}) => {
 
 const InnerVideo = ({id})  => {
   const [lang] = useContext(Context);
-  const { title } = getCountryData('en', id);
+  const { title } = getCountryData(lang, id);
+  const titleForUrl = getCountryData('en', id);
   return (
     <div className="inner-video">
       <h2>{`${localization[lang].about}, ${title}`}</h2>
       
-      <VideoPlayer countryName={title} />
+      <VideoPlayer countryName={titleForUrl.title} />
     </div>
   );
 };
