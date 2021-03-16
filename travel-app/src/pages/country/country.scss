@@ -92,19 +92,6 @@
 
 .inner-map {
   @include section-paddings;
-  padding-bottom: 0;
   background-color: $color-gray-light;
   text-align: center;
-
-  @media (max-width: $xl-width-content + 40) {
-    padding-bottom: 0;
-  }
-
-  @media (max-width: $lg-width-content + 60) {
-    padding-bottom: 0;
-  }
-
-  @media (max-width: $md-width-content + 40) {
-    padding-bottom: 0;
-  }
 }

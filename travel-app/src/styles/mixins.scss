@@ -27,6 +27,8 @@
   @media (max-width: $md-width-content + 60) {
     padding: 60px 0;
   }
+
+  &:last-child{padding-bottom:0};
 }
 
 @mixin widgets-common-style {
