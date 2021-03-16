@@ -91,7 +91,6 @@
 
 .inner-map {
   @include section-paddings;
-  padding-bottom: 0;
   background-color: $color-gray-light;
   text-align: center;
 }

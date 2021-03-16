@@ -6,6 +6,8 @@ html {
 
 body {
   font-family: 'Roboto';
+  position: relative;
+  min-width: $sm-width-content + 20px;
 }
 
 a {
