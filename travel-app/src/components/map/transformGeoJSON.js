@@ -1,8 +1,7 @@
-// import geoJSON from '../../data/geoJSON.json';
-import geoJSON from '../../data/countries.json';
+import geoJSON from '../../data/geoJSON.json';
 
 const transformGeoJSON = (title) =>  {
-  const features = geoJSON.features.filter((({ properties }) => properties.ADMIN === title));
+  const features = geoJSON.features.filter((({ properties }) => properties.name === title));
   const countryGeoJSON = { ...geoJSON, features };
 
   return countryGeoJSON;
