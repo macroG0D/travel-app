@@ -1,5 +1,5 @@
 # Travel-app on React
-### Deploy: https://react-travelapp.netlify.com/
+### Deploy: https://macrog0d-travelapp.netlify.app
 Single page application that shows many information about different countries in 3 languages. The number of countries can be unlimited becouse it renders content based on the data from JSON (but API may be used instead). Content language, selected country and search is working without page reload. Also was implemented correct routing witch allows to use direct URL and go backward and forward on the APP url history.
 
 ## Stack
