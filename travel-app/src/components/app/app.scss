@@ -1,9 +1,0 @@
-html{
-  color:$secondary-color;
-  background-color: $primary-color;
-}
-.app{
-  &__title{
-    @include bold-font;
-  }
-}
