@@ -49,7 +49,7 @@ const DateBlock = ({ id }) => {
       setDate(getLocalDate(new Date(), id, lang));
       setTime(getLocalTime(new Date(), id));
     }, 1000);
-  }, [lang, id]);
+  }, [lang, id, date, time]);
 
   return (
     <div className="date-block">
