@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import Switcher from '../switcher';
 import { Context } from '../context';
 import Header from '../header';
@@ -20,9 +20,9 @@ const App = () => {
     <Context.Provider value={[lang, setLang]}>
       <BrowserRouter>
         <div className="app">
-          <Header updateFilter={setFilterVal}/>
-          <Switcher  filterVal={filterVal}/>
-          <Footer/>
+          <Header updateFilter={setFilterVal} />
+          <Switcher filterVal={filterVal} />
+          <Footer />
         </div>
       </BrowserRouter>
     </Context.Provider>
