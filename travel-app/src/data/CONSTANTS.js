@@ -1,5 +1,4 @@
 const githubSrc = 'https://github.com/';
-const videoURL = 'http://box5519.temp.domains/~yemdigit/files_hosting/travel_app/';
 
 const githubMembers = [
   {
@@ -30,4 +29,4 @@ const githubMembers = [
 
 const langs = ['en', 'ru', 'de'];
 
-export { githubSrc, githubMembers, langs, videoURL };
+export { githubSrc, githubMembers, langs };

@@ -3,6 +3,7 @@
     "id": 0,
     "title": "Australia",
     "capital": "Canberra",
+    "video": "https://dl.dropboxusercontent.com/s/mawqcf1x827v7ii/australia.mp4",
     "currency": {
       "name": "Australian dollar",
       "code": "AUD"
@@ -41,6 +42,7 @@
     "id": 1,
     "title": "France",
     "capital": "Paris",
+    "video": "https://dl.dropboxusercontent.com/s/fvp1s95dson587s/france.mp4",
     "currency": {
       "name": "Euro",
       "code": "EUR"
@@ -79,6 +81,7 @@
     "id": 2,
     "title": "Spain",
     "capital": "Madrid",
+    "video": "https://dl.dropboxusercontent.com/s/ofncd9fby67o7lo/spain.mp4",
     "currency": {
       "name": "Euro",
       "code": "EUR"
@@ -117,6 +120,7 @@
     "id": 3,
     "title": "Brazil",
     "capital": "Brasilia",
+    "video": "https://dl.dropboxusercontent.com/s/lnt2yeog1algaoh/brazil.mp4",
     "currency": {
       "name": "Brazilian real",
       "code": "BRL"
@@ -155,6 +159,7 @@
     "id": 4,
     "title": "China",
     "capital": "Beijing",
+    "video": "https://dl.dropboxusercontent.com/s/e1wc5p51fqrclsh/china.mp4",
     "currency": {
       "name": "Chinese Yuan Renminbi",
       "code": "CNY"
@@ -193,6 +198,7 @@
     "id": 5,
     "title": "Mexico",
     "capital": "Mexico City",
+    "video": "https://dl.dropboxusercontent.com/s/o5xhy6gxzyyekkb/mexico.mp4",
     "currency": {
       "name": "mexican peso",
       "code": "MXN"
@@ -231,6 +237,7 @@
     "id": 6,
     "title": "Italy",
     "capital": "Rome",
+    "video": "https://dl.dropboxusercontent.com/s/w5uk0mztcw3xi5k/italy.mp4",
     "currency":{
       "name": "Euro",
       "code": "EUR"
@@ -251,6 +258,7 @@
     "id": 7,
     "title": "India",
     "capital": "Delhi",
+    "video": "https://dl.dropboxusercontent.com/s/0elbv9didnpny85/india.mp4",
     "currency": {
       "name": "Indian Rupee",
       "code": "INR"
