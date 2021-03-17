@@ -1,34 +1,21 @@
+# Travel-app on React
+### Deploy: https://react-travelapp.netlify.com/
+Single page application that shows many information about different countries in 3 languages. The number of countries can be unlimited becouse it renders content based on the data from JSON (but API may be used instead). Content language, selected country and search is working without page reload. Also was implemented correct routing witch allows to use direct URL and go backward and forward on the APP url history.
 
-### Вёрстка, дизайн, UI 30/30
-- [x] вёрстка, дизайн, UI главной страницы приложения +10
-- [x] вёрстка, дизайн, UI страницы страны +10
-- [x] оригинальный интересный качественный дизайн приложения, используются анимации, сложные элементы оформления, например, эффект параллакса, полноэкранное видео, синемаграфы и т.д. +10 — есть полноэкранное видео, полноэкранная карта и в целом качественный дизайн
+## Stack
+- React (use: hooks, route)
+- ES6+
+- weather API
+- leaflet map
+- react-gallery
+- react-video
 
-### Главная страница приложения 30/30
-- [x] поиск +10
-- [x] локализация главной страницы приложения на три языка +10
-- [x] карточки стран +10
+## Usage
+- npm i
+- npm start or npm build
 
-### Страница страны 80/80
-- [x] локализация страницы страны на три языка +10
-- [x] фото страны, название страны, название её столицы, краткая информация о стране +10
-- [x] фотогалерея достопримечательностей +10
-- [x] видео +10
-- [x] карта +10
-- [x] информер погоды +10
-- [x] виджет даты и времени в столице страны +10
-- [x] курс местной валюты +10
-
-### Бекенд 0/40
-
-- [ ] создано API для получения данных о стране +10 (API создаётся с использованием фреймворка express/koa/nest и тд. При использовании **json-server** и подобных инструментов пункт выполненным не считается.)  
-- [ ] при регистрации нового пользователя можно указать его имя и загрузить фото +10
-- [ ] реализована авторизация и разавторизация пользователя. Основная часть приложения доступна без авторизации. При перезагрузке приложения данные о пользователе сохраняются +10
-- [ ] есть возможность проставить и сохранить в бекенде рейтинг достопримечательностям страны, увидеть других проголосовавших и какой рейтинг указал каждый из них +10 
-
-### Дополнительный функционал 0/20
-
-- [ ] продуман и реализован не предусмотренный заданием сложный в реализации дополнительный функционал, который существенно улучшает качество приложения +10
-- [ ] написано не меньше 10 юнит-тестов, использующих различные [методы jest](https://jestjs.io/docs/ru/expect) +10
-
-## Итого 140 / 200
+## Developers:
+### [TonYem](https://github.com/macroG0D) — teamlead, developer, UX/UI
+### [Kkasya](https://github.com/Kkasya) — developer
+### [Heliken](https://github.com/Heliken) — developer
+### [alexk08](https://github.com/alexk08) — developer
