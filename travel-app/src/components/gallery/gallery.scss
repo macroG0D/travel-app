@@ -41,6 +41,10 @@
     }
   }
 
+  .image-gallery-bullets {
+    z-index: 0;
+  }
+
   .image-gallery-bullet {
     &.active {
       background: $color-accent !important;
@@ -84,13 +88,9 @@
   position: relative;
   padding: 0;
 }
-h2 {
-  max-width: $xl-width-content;
-  word-wrap: break-word;
-}
+
 .gallery {
   background-color: $color-gray-light;
-
   &__content {
     max-width: $xl-width-content;
     padding: 30px 0 120px 0;
@@ -99,7 +99,7 @@ h2 {
     @media (max-width: 1220px) {
       max-width: $lg-width-content;
     }
-    
+
     @media (max-width: 1000px) {
       padding-bottom: 0;
       max-width: 98%;
